@@ -1,0 +1,22 @@
+C:\Development\source\CompPlan\CompPlan\CompPlanService_CL\bin\Release\CompPlanService_CL.exe.config
+C:\Development\source\CompPlan\CompPlan\CompPlanService_CL\bin\Release\CompPlanService_CL.exe
+C:\Development\source\CompPlan\CompPlan\CompPlanService_CL\bin\Release\CompPlanService_CL.pdb
+C:\Development\source\CompPlan\CompPlan\CompPlanService_CL\bin\Release\CompPlanLib.dll
+C:\Development\source\CompPlan\CompPlan\CompPlanService_CL\bin\Release\CompPlanLib.pdb
+C:\Development\source\CompPlan\CompPlan\CompPlanService_CL\bin\Release\CompPlanLib.dll.config
+C:\Development\source\CompPlan\CompPlan\CompPlanService_CL\obj\Release\CompPlanService_CL.csprojAssemblyReference.cache
+C:\Development\source\CompPlan\CompPlan\CompPlanService_CL\obj\Release\CompPlanService_CL.csproj.CoreCompileInputs.cache
+C:\Development\source\CompPlan\CompPlan\CompPlanService_CL\obj\Release\CompPlanService_CL.csproj.CopyComplete
+C:\Development\source\CompPlan\CompPlan\CompPlanService_CL\obj\Release\CompPlanService_CL.exe
+C:\Development\source\CompPlan\CompPlan\CompPlanService_CL\obj\Release\CompPlanService_CL.pdb
+C:\Users\jon.blackburn\Desktop\Comp Items\CompPlan\CompPlan\CompPlanService_CL\bin\Release\CompPlanService_CL.exe.config
+C:\Users\jon.blackburn\Desktop\Comp Items\CompPlan\CompPlan\CompPlanService_CL\bin\Release\CompPlanService_CL.exe
+C:\Users\jon.blackburn\Desktop\Comp Items\CompPlan\CompPlan\CompPlanService_CL\bin\Release\CompPlanService_CL.pdb
+C:\Users\jon.blackburn\Desktop\Comp Items\CompPlan\CompPlan\CompPlanService_CL\bin\Release\CompPlanLib.dll
+C:\Users\jon.blackburn\Desktop\Comp Items\CompPlan\CompPlan\CompPlanService_CL\bin\Release\CompPlanLib.pdb
+C:\Users\jon.blackburn\Desktop\Comp Items\CompPlan\CompPlan\CompPlanService_CL\bin\Release\CompPlanLib.dll.config
+C:\Users\jon.blackburn\Desktop\Comp Items\CompPlan\CompPlan\CompPlanService_CL\obj\Release\CompPlanService_CL.csprojAssemblyReference.cache
+C:\Users\jon.blackburn\Desktop\Comp Items\CompPlan\CompPlan\CompPlanService_CL\obj\Release\CompPlanService_CL.csproj.CoreCompileInputs.cache
+C:\Users\jon.blackburn\Desktop\Comp Items\CompPlan\CompPlan\CompPlanService_CL\obj\Release\CompPlanService_CL.csproj.CopyComplete
+C:\Users\jon.blackburn\Desktop\Comp Items\CompPlan\CompPlan\CompPlanService_CL\obj\Release\CompPlanService_CL.exe
+C:\Users\jon.blackburn\Desktop\Comp Items\CompPlan\CompPlan\CompPlanService_CL\obj\Release\CompPlanService_CL.pdb

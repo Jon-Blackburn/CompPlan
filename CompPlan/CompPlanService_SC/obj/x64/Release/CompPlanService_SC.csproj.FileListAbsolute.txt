@@ -1,0 +1,10 @@
+C:\Development\source\CompPlan\CompPlan\CompPlanService_SC\bin\x64\Release\CompPlanService_SC.exe.config
+C:\Development\source\CompPlan\CompPlan\CompPlanService_SC\bin\x64\Release\CompPlanService_SC.exe
+C:\Development\source\CompPlan\CompPlan\CompPlanService_SC\bin\x64\Release\CompPlanService_SC.pdb
+C:\Development\source\CompPlan\CompPlan\CompPlanService_SC\bin\x64\Release\CompPlanLib.dll
+C:\Development\source\CompPlan\CompPlan\CompPlanService_SC\bin\x64\Release\CompPlanLib.pdb
+C:\Development\source\CompPlan\CompPlan\CompPlanService_SC\bin\x64\Release\CompPlanLib.dll.config
+C:\Development\source\CompPlan\CompPlan\CompPlanService_SC\obj\x64\Release\CompPlanService_SC.csprojResolveAssemblyReference.cache
+C:\Development\source\CompPlan\CompPlan\CompPlanService_SC\obj\x64\Release\CompPlanService_SC.csproj.CoreCompileInputs.cache
+C:\Development\source\CompPlan\CompPlan\CompPlanService_SC\obj\x64\Release\CompPlanService_SC.exe
+C:\Development\source\CompPlan\CompPlan\CompPlanService_SC\obj\x64\Release\CompPlanService_SC.pdb

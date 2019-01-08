@@ -1,0 +1,22 @@
+C:\Development\source\CompPlan\CompPlan\CompPlanService_DL\bin\Debug\CompPlanService_DL.exe.config
+C:\Development\source\CompPlan\CompPlan\CompPlanService_DL\bin\Debug\CompPlanService_DL.exe
+C:\Development\source\CompPlan\CompPlan\CompPlanService_DL\bin\Debug\CompPlanService_DL.pdb
+C:\Development\source\CompPlan\CompPlan\CompPlanService_DL\bin\Debug\CompPlanLib.dll
+C:\Development\source\CompPlan\CompPlan\CompPlanService_DL\bin\Debug\CompPlanLib.pdb
+C:\Development\source\CompPlan\CompPlan\CompPlanService_DL\bin\Debug\CompPlanLib.dll.config
+C:\Development\source\CompPlan\CompPlan\CompPlanService_DL\obj\Debug\CompPlanService_DL.csprojResolveAssemblyReference.cache
+C:\Development\source\CompPlan\CompPlan\CompPlanService_DL\obj\Debug\CompPlanService_DL.csproj.CoreCompileInputs.cache
+C:\Development\source\CompPlan\CompPlan\CompPlanService_DL\obj\Debug\CompPlanService_DL.csproj.CopyComplete
+C:\Development\source\CompPlan\CompPlan\CompPlanService_DL\obj\Debug\CompPlanService_DL.exe
+C:\Development\source\CompPlan\CompPlan\CompPlanService_DL\obj\Debug\CompPlanService_DL.pdb
+C:\Users\jon.blackburn\Desktop\Comp Items\CompPlan\CompPlan\CompPlanService_DL\bin\Debug\CompPlanService_DL.exe.config
+C:\Users\jon.blackburn\Desktop\Comp Items\CompPlan\CompPlan\CompPlanService_DL\bin\Debug\CompPlanService_DL.exe
+C:\Users\jon.blackburn\Desktop\Comp Items\CompPlan\CompPlan\CompPlanService_DL\bin\Debug\CompPlanService_DL.pdb
+C:\Users\jon.blackburn\Desktop\Comp Items\CompPlan\CompPlan\CompPlanService_DL\bin\Debug\CompPlanLib.dll
+C:\Users\jon.blackburn\Desktop\Comp Items\CompPlan\CompPlan\CompPlanService_DL\bin\Debug\CompPlanLib.pdb
+C:\Users\jon.blackburn\Desktop\Comp Items\CompPlan\CompPlan\CompPlanService_DL\bin\Debug\CompPlanLib.dll.config
+C:\Users\jon.blackburn\Desktop\Comp Items\CompPlan\CompPlan\CompPlanService_DL\obj\Debug\CompPlanService_DL.csprojAssemblyReference.cache
+C:\Users\jon.blackburn\Desktop\Comp Items\CompPlan\CompPlan\CompPlanService_DL\obj\Debug\CompPlanService_DL.csproj.CoreCompileInputs.cache
+C:\Users\jon.blackburn\Desktop\Comp Items\CompPlan\CompPlan\CompPlanService_DL\obj\Debug\CompPlanService_DL.csproj.CopyComplete
+C:\Users\jon.blackburn\Desktop\Comp Items\CompPlan\CompPlan\CompPlanService_DL\obj\Debug\CompPlanService_DL.exe
+C:\Users\jon.blackburn\Desktop\Comp Items\CompPlan\CompPlan\CompPlanService_DL\obj\Debug\CompPlanService_DL.pdb

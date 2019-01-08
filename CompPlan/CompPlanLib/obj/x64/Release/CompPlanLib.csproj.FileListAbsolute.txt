@@ -1,0 +1,7 @@
+C:\Development\source\CompPlan\CompPlan\CompPlanLib\bin\x64\Release\CompPlanLib.dll.config
+C:\Development\source\CompPlan\CompPlan\CompPlanLib\bin\x64\Release\CompPlanLib.dll
+C:\Development\source\CompPlan\CompPlan\CompPlanLib\bin\x64\Release\CompPlanLib.pdb
+C:\Development\source\CompPlan\CompPlan\CompPlanLib\obj\x64\Release\CompPlanLib.csprojResolveAssemblyReference.cache
+C:\Development\source\CompPlan\CompPlan\CompPlanLib\obj\x64\Release\CompPlanLib.csproj.CoreCompileInputs.cache
+C:\Development\source\CompPlan\CompPlan\CompPlanLib\obj\x64\Release\CompPlanLib.dll
+C:\Development\source\CompPlan\CompPlan\CompPlanLib\obj\x64\Release\CompPlanLib.pdb

@@ -1,0 +1,21 @@
+C:\Development\source\CompPlan\CompPlan\CompPlanService_BC\bin\Debug\CompPlanService_BC.exe.config
+C:\Development\source\CompPlan\CompPlan\CompPlanService_BC\bin\Debug\CompPlanService_BC.exe
+C:\Development\source\CompPlan\CompPlan\CompPlanService_BC\bin\Debug\CompPlanService_BC.pdb
+C:\Development\source\CompPlan\CompPlan\CompPlanService_BC\bin\Debug\CompPlanLib.dll
+C:\Development\source\CompPlan\CompPlan\CompPlanService_BC\bin\Debug\CompPlanLib.pdb
+C:\Development\source\CompPlan\CompPlan\CompPlanService_BC\bin\Debug\CompPlanLib.dll.config
+C:\Development\source\CompPlan\CompPlan\CompPlanService_BC\obj\Debug\CompPlanService_BC.csproj.CoreCompileInputs.cache
+C:\Development\source\CompPlan\CompPlan\CompPlanService_BC\obj\Debug\CompPlanService_BC.csproj.CopyComplete
+C:\Development\source\CompPlan\CompPlan\CompPlanService_BC\obj\Debug\CompPlanService_BC.exe
+C:\Development\source\CompPlan\CompPlan\CompPlanService_BC\obj\Debug\CompPlanService_BC.pdb
+C:\Users\jon.blackburn\Desktop\Comp Items\CompPlan\CompPlan\CompPlanService_BC\bin\Debug\CompPlanService_BC.exe.config
+C:\Users\jon.blackburn\Desktop\Comp Items\CompPlan\CompPlan\CompPlanService_BC\bin\Debug\CompPlanService_BC.exe
+C:\Users\jon.blackburn\Desktop\Comp Items\CompPlan\CompPlan\CompPlanService_BC\bin\Debug\CompPlanService_BC.pdb
+C:\Users\jon.blackburn\Desktop\Comp Items\CompPlan\CompPlan\CompPlanService_BC\bin\Debug\CompPlanLib.dll
+C:\Users\jon.blackburn\Desktop\Comp Items\CompPlan\CompPlan\CompPlanService_BC\bin\Debug\CompPlanLib.pdb
+C:\Users\jon.blackburn\Desktop\Comp Items\CompPlan\CompPlan\CompPlanService_BC\bin\Debug\CompPlanLib.dll.config
+C:\Users\jon.blackburn\Desktop\Comp Items\CompPlan\CompPlan\CompPlanService_BC\obj\Debug\CompPlanService_BC.csprojAssemblyReference.cache
+C:\Users\jon.blackburn\Desktop\Comp Items\CompPlan\CompPlan\CompPlanService_BC\obj\Debug\CompPlanService_BC.csproj.CoreCompileInputs.cache
+C:\Users\jon.blackburn\Desktop\Comp Items\CompPlan\CompPlan\CompPlanService_BC\obj\Debug\CompPlanService_BC.csproj.CopyComplete
+C:\Users\jon.blackburn\Desktop\Comp Items\CompPlan\CompPlan\CompPlanService_BC\obj\Debug\CompPlanService_BC.exe
+C:\Users\jon.blackburn\Desktop\Comp Items\CompPlan\CompPlan\CompPlanService_BC\obj\Debug\CompPlanService_BC.pdb

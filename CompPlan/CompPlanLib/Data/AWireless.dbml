@@ -1,0 +1,968 @@
+﻿<?xml version="1.0" encoding="utf-8"?><Database Name="awireless_production" Class="AWirelessDataContext" xmlns="http://schemas.microsoft.com/linqtosql/dbml/2007">
+  <Connection Mode="ConnectionString" ConnectionString="Data Source=vmcsql01;Initial Catalog=awireless_production;Persist Security Info=True;User ID=wrap_user;Password=$$rq41234" Provider="System.Data.SqlClient" />
+  <Table Name="dbo.commissions_pay_periods" Member="commissions_pay_periods">
+    <Type Name="commissions_pay_periods">
+      <Column Name="pay_period_id" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="start_date" Type="System.DateTime" DbType="DateTime NOT NULL" CanBeNull="false" />
+      <Column Name="end_date" Type="System.DateTime" DbType="DateTime NOT NULL" CanBeNull="false" />
+      <Column Name="for_consultants" Type="System.Boolean" DbType="Bit NOT NULL" CanBeNull="false" />
+    </Type>
+  </Table>
+  <Table Name="dbo.performance_target_levels" Member="performance_target_levels">
+    <Type Name="performance_target_levels">
+      <Column Name="target_level_id" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="target_level" Type="System.String" DbType="VarChar(50) NOT NULL" CanBeNull="false" />
+    </Type>
+  </Table>
+  <Table Name="dbo.commissions_type" Member="commissions_type">
+    <Type Name="commissions_type">
+      <Column Name="commissions_type_id" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="code" Type="System.String" DbType="VarChar(10) NOT NULL" CanBeNull="false" />
+      <Column Name="description" Type="System.String" DbType="VarChar(100) NOT NULL" CanBeNull="false" />
+    </Type>
+  </Table>
+  <Table Name="dbo.commissions_accelerator_values" Member="commissions_accelerator_values">
+    <Type Name="commissions_accelerator_values">
+      <Column Name="commissions_accelerator_values_id" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="commissions_accelerator_id" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="percentage_start" Type="System.Decimal" DbType="Decimal(18,4) NOT NULL" CanBeNull="false" />
+      <Column Name="percentage_end" Type="System.Decimal" DbType="Decimal(18,4) NOT NULL" CanBeNull="false" />
+      <Column Name="accelerator" Type="System.Decimal" DbType="Decimal(18,2) NOT NULL" CanBeNull="false" />
+    </Type>
+  </Table>
+  <Table Name="dbo.commissions_payouts_minimum" Member="commissions_payouts_minimum">
+    <Type Name="commissions_payouts_minimum">
+      <Column Name="commissions_payouts_minimum_id" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="performance_target_level" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="start_date" Type="System.DateTime" DbType="DateTime NOT NULL" CanBeNull="false" />
+      <Column Name="end_date" Type="System.DateTime" DbType="DateTime NOT NULL" CanBeNull="false" />
+      <Column Name="minimum_boxes" Type="System.Decimal" DbType="Decimal(18,4) NOT NULL" CanBeNull="false" />
+      <Column Name="payout_value" Type="System.Decimal" DbType="Decimal(18,4) NOT NULL" CanBeNull="false" />
+      <Column Name="percentage_of_gross_profit" Type="System.Boolean" DbType="Bit NOT NULL" CanBeNull="false" />
+    </Type>
+  </Table>
+  <Table Name="dbo.vw_locations_combined" Member="vw_locations_combined">
+    <Type Name="vw_locations_combined">
+      <Column Name="StoreID" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="store_name" Type="System.String" DbType="NVarChar(MAX)" CanBeNull="true" />
+      <Column Name="StoreTypeID" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="open_date" Type="System.DateTime" DbType="DateTime2" CanBeNull="true" />
+      <Column Name="close_date" Type="System.DateTime" DbType="DateTime2" CanBeNull="true" />
+      <Column Name="Enabled" Type="System.Boolean" DbType="Bit NOT NULL" CanBeNull="false" />
+      <Column Name="districtID" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="district_name" Type="System.String" DbType="NVarChar(MAX)" CanBeNull="true" />
+      <Column Name="regionid" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="region_name" Type="System.String" DbType="NVarChar(MAX)" CanBeNull="true" />
+      <Column Name="original_rq_district_id" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="original_district_name" Type="System.String" DbType="NVarChar(MAX)" CanBeNull="true" />
+      <Column Name="original_region_id" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="original_region_name" Type="System.String" DbType="NVarChar(MAX)" CanBeNull="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.performance_tiers" Member="performance_tiers">
+    <Type Name="performance_tiers">
+      <Column Name="performance_tiers_id" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="pay_period_id" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="performance_target_level" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="tier_code" Type="System.String" DbType="VarChar(10) NOT NULL" CanBeNull="false" />
+      <Column Name="tier_description" Type="System.String" DbType="VarChar(100)" CanBeNull="true" />
+      <Column Name="gross_profit_margin" Type="System.Decimal" DbType="Decimal(18,4) NOT NULL" CanBeNull="false" />
+      <Column Name="commission_cap" Type="System.Decimal" DbType="Decimal(18,4) NOT NULL" CanBeNull="false" />
+    </Type>
+  </Table>
+  <Table Name="dbo.performance_tiers_items" Member="performance_tiers_items">
+    <Type Name="performance_tiers_items">
+      <Column Name="performance_tiers_items_id" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="performance_tiers_id" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="item_id" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+    </Type>
+  </Table>
+  <Table Name="dbo.commissions_tier_assignment" Member="commissions_tier_assignment">
+    <Type Name="commissions_tier_assignment">
+      <Column Name="commissions_tier_assignment_id" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="pay_period_id" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="performance_target_level" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="box_count" Type="System.Decimal" DbType="Decimal(18,4) NOT NULL" CanBeNull="false" />
+      <Column Name="tier_code" Type="System.String" DbType="VarChar(10) NOT NULL" CanBeNull="false" />
+      <Column Name="operator" Type="System.String" DbType="VarChar(5) NOT NULL" CanBeNull="false" />
+    </Type>
+  </Table>
+  <Table Name="dbo.commissions_configuration" Member="commissions_configuration">
+    <Type Name="commissions_configuration">
+      <Column Name="commissions_configuration_id" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="performance_target_level" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="pay_period_id" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="last_run_date" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="default_tier_code" Type="System.String" DbType="VarChar(10) NOT NULL" CanBeNull="false" />
+    </Type>
+  </Table>
+  <Table Name="dbo.commissions_participation" Member="commissions_participation">
+    <Type Name="commissions_participation">
+      <Column Name="commissions_participation_id" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="pay_period_id" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="performance_target_level" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="performance_target_metrics_id" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="location_count" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="met_quota_count" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="value" Type="System.Decimal" DbType="Decimal(18,4) NOT NULL" CanBeNull="false" />
+    </Type>
+  </Table>
+  <Table Name="dbo.commissions_compplan_log" Member="commissions_compplan_log">
+    <Type Name="commissions_compplan_log">
+      <Column Name="commissions_compplan_log_id" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="created_date" Type="System.DateTime" DbType="DateTime NOT NULL" CanBeNull="false" />
+      <Column Name="message_type" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="message_text" Type="System.String" DbType="VarChar(MAX)" CanBeNull="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.commissions_region_leader_detail" Member="commissions_region_leader_detail">
+    <Type Name="commissions_region_leader_detail">
+      <Column Name="commissions_region_leader_detail_id" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="commissions_region_leader_id" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="commissions_type_id" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="commissions_participation_id" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="participation_location_count" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="participation_target_count" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="participation_index_value" Type="System.Decimal" DbType="Decimal(18,4) NOT NULL" CanBeNull="false" />
+      <Column Name="performance_target_id" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="target_value" Type="System.Decimal" DbType="Decimal(18,4) NOT NULL" CanBeNull="false" />
+      <Column Name="min_metric_id" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="min_metric_value" Type="System.Decimal" DbType="Decimal(18,4) NOT NULL" CanBeNull="false" />
+      <Column Name="metric_id" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="metric_value" Type="System.Decimal" DbType="Decimal(18,4) NOT NULL" CanBeNull="false" />
+      <Column Name="percent_to_target" Type="System.Decimal" DbType="Decimal(18,4) NOT NULL" CanBeNull="false" />
+      <Column Name="accelerator_value" Type="System.Decimal" DbType="Decimal(18,4) NOT NULL" CanBeNull="false" />
+      <Column Name="performance_total" Type="System.Decimal" DbType="Decimal(18,4) NOT NULL" CanBeNull="false" />
+      <Column Name="payout_id" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="payout_category_id" Type="System.String" DbType="VarChar(100) NOT NULL" CanBeNull="false" />
+      <Column Name="payout_sku" Type="System.String" DbType="VarChar(12) NOT NULL" CanBeNull="false" />
+      <Column Name="payout_amount" Type="System.Decimal" DbType="Decimal(18,4) NOT NULL" CanBeNull="false" />
+      <Column Name="payout_count" Type="System.Decimal" DbType="Decimal(18,4) NOT NULL" CanBeNull="false" />
+      <Column Name="payout_total" Type="System.Decimal" DbType="Decimal(18,4) NOT NULL" CanBeNull="false" />
+      <Column Name="kpi_id" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="kpi_points" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+    </Type>
+  </Table>
+  <Table Name="dbo.commissions_kpi" Member="commissions_kpi">
+    <Type Name="commissions_kpi">
+      <Column Name="commissions_kpi_id" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="pay_period_id" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="performance_target_level" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="metric_id" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="kpi_description" Type="System.String" DbType="VarChar(255)" CanBeNull="true" />
+      <Column Name="auto_create_in_new_payperiod" Type="System.Boolean" DbType="Bit NOT NULL" CanBeNull="false" />
+    </Type>
+  </Table>
+  <Table Name="dbo.commissions_kpi_points_reward_values" Member="commissions_kpi_points_reward_values">
+    <Type Name="commissions_kpi_points_reward_values">
+      <Column Name="commissions_kpi_points_id" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="pay_period_id" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="performance_target_level" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="points_earned_start" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="points_earned_end" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="reward_value" Type="System.Decimal" DbType="Decimal(18,4) NOT NULL" CanBeNull="false" />
+      <Column Name="auto_create_in_new_payperiod" Type="System.Boolean" DbType="Bit NOT NULL" CanBeNull="false" />
+    </Type>
+  </Table>
+  <Table Name="dbo.commissions_kpi_groups" Member="commissions_kpi_groups">
+    <Type Name="commissions_kpi_groups">
+      <Column Name="commissions_kpi_groups_id" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="group_id" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="commissions_kpi_id" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="description" Type="System.String" DbType="VarChar(255) NOT NULL" CanBeNull="false" />
+    </Type>
+  </Table>
+  <Table Name="dbo.commissions_kpi_items" Member="commissions_kpi_items">
+    <Type Name="commissions_kpi_items">
+      <Column Name="commissions_kpi_items_id" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="group_id" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="item_id" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+    </Type>
+  </Table>
+  <Table Name="dbo.commissions_kpi_goal_points" Member="commissions_kpi_goal_points">
+    <Type Name="commissions_kpi_goal_points">
+      <Column Name="commissions_kpi_goal_points_id" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="commissions_kpi_groups_id" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="goal_start" Type="System.Decimal" DbType="Decimal(18,4) NOT NULL" CanBeNull="false" />
+      <Column Name="goal_end" Type="System.Decimal" DbType="Decimal(18,4) NOT NULL" CanBeNull="false" />
+      <Column Name="points" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+    </Type>
+  </Table>
+  <Table Name="dbo.performance_target_type_mappings" Member="performance_target_type_mappings">
+    <Type Name="performance_target_type_mappings">
+      <Column Name="performance_target_type_mapping_id" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="performance_target_type_id" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="performance_target_metric_id" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+    </Type>
+  </Table>
+  <Table Name="dbo.commissions_store_leader_detail" Member="commissions_store_leader_detail">
+    <Type Name="commissions_store_leader_detail">
+      <Column Name="commissions_store_leader_detail_id" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="commissions_store_leader_id" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="commissions_type_id" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="performance_target_id" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="target_value" Type="System.Decimal" DbType="Decimal(18,4) NOT NULL" CanBeNull="false" />
+      <Column Name="min_metric_id" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="min_metric_value" Type="System.Decimal" DbType="Decimal(18,4) NOT NULL" CanBeNull="false" />
+      <Column Name="metric_id" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="metric_value" Type="System.Decimal" DbType="Decimal(18,4) NOT NULL" CanBeNull="false" />
+      <Column Name="percent_to_target" Type="System.Decimal" DbType="Decimal(18,4) NOT NULL" CanBeNull="false" />
+      <Column Name="accelerator_value" Type="System.Decimal" DbType="Decimal(18,4) NOT NULL" CanBeNull="false" />
+      <Column Name="performance_total" Type="System.Decimal" DbType="Decimal(18,4) NOT NULL" CanBeNull="false" />
+      <Column Name="payout_id" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="payout_category_id" Type="System.String" DbType="VarChar(100) NOT NULL" CanBeNull="false" />
+      <Column Name="payout_sku" Type="System.String" DbType="VarChar(12) NOT NULL" CanBeNull="false" />
+      <Column Name="payout_amount" Type="System.Decimal" DbType="Decimal(18,4) NOT NULL" CanBeNull="false" />
+      <Column Name="payout_count" Type="System.Decimal" DbType="Decimal(18,4) NOT NULL" CanBeNull="false" />
+      <Column Name="payout_total" Type="System.Decimal" DbType="Decimal(18,4) NOT NULL" CanBeNull="false" />
+      <Column Name="kpi_id" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="kpi_points" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="mso_serial_number" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.commissions_target_payout_values" Member="commissions_target_payout_values">
+    <Type Name="commissions_target_payout_values">
+      <Column Name="commissions_target_payout_values_id" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="commissions_target_payout_id" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="start_value" Type="System.Decimal" DbType="Decimal(18,4) NOT NULL" CanBeNull="false" />
+      <Column Name="end_value" Type="System.Decimal" DbType="Decimal(18,4) NOT NULL" CanBeNull="false" />
+      <Column Name="payout_value" Type="System.Decimal" DbType="Decimal(18,4) NOT NULL" CanBeNull="false" />
+    </Type>
+  </Table>
+  <Table Name="dbo.commissions_payouts_category_values" Member="commissions_payouts_category_values">
+    <Type Name="commissions_payouts_category_values">
+      <Column Name="commissions_payouts_category_values_id" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="commissions_payouts_category_id" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="start_value" Type="System.Decimal" DbType="Decimal(18,4) NOT NULL" CanBeNull="false" />
+      <Column Name="end_value" Type="System.Decimal" DbType="Decimal(18,4) NOT NULL" CanBeNull="false" />
+      <Column Name="payout_value" Type="System.Decimal" DbType="Decimal(18,4) NOT NULL" CanBeNull="false" />
+    </Type>
+  </Table>
+  <Table Name="dbo.commissions_target_payout_team_bonus_values" Member="commissions_target_payout_team_bonus_values">
+    <Type Name="commissions_target_payout_team_bonus_values">
+      <Column Name="commissions_target_payout_team_bonus_values_id" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="commissions_target_payout_team_bonus_id" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="start_value" Type="System.Decimal" DbType="Decimal(18,4) NOT NULL" CanBeNull="false" />
+      <Column Name="end_value" Type="System.Decimal" DbType="Decimal(18,4) NOT NULL" CanBeNull="false" />
+      <Column Name="payout_value" Type="System.Decimal" DbType="Decimal(18,4) NOT NULL" CanBeNull="false" />
+    </Type>
+  </Table>
+  <Table Name="dbo.vw_iQmetrix_Employees" Member="vw_iQmetrix_Employees">
+    <Type Name="vw_iQmetrix_Employees">
+      <Column Name="Id_Number" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="Last_Name" Type="System.String" DbType="VarChar(25) NOT NULL" CanBeNull="false" />
+      <Column Name="First_Name" Type="System.String" DbType="VarChar(25) NOT NULL" CanBeNull="false" />
+      <Column Name="Employee_Name" Type="System.String" DbType="VarChar(51) NOT NULL" CanBeNull="false" />
+      <Column Name="Password" Type="System.String" DbType="VarChar(255) NOT NULL" CanBeNull="false" />
+      <Column Name="Email" Type="System.String" DbType="VarChar(50) NOT NULL" CanBeNull="false" />
+      <Column Name="PersonalEmail" Type="System.String" DbType="VarChar(50) NOT NULL" CanBeNull="false" />
+      <Column Name="Address" Type="System.String" DbType="VarChar(50) NOT NULL" CanBeNull="false" />
+      <Column Name="Address2" Type="System.String" DbType="VarChar(50) NOT NULL" CanBeNull="false" />
+      <Column Name="City" Type="System.String" DbType="VarChar(50) NOT NULL" CanBeNull="false" />
+      <Column Name="Province" Type="System.String" DbType="VarChar(50) NOT NULL" CanBeNull="false" />
+      <Column Name="Postal_Code" Type="System.String" DbType="VarChar(15) NOT NULL" CanBeNull="false" />
+      <Column Name="Country" Type="System.String" DbType="VarChar(50) NOT NULL" CanBeNull="false" />
+      <Column Name="Home_Number" Type="System.String" DbType="VarChar(50) NOT NULL" CanBeNull="false" />
+      <Column Name="Work_Number" Type="System.String" DbType="VarChar(50) NOT NULL" CanBeNull="false" />
+      <Column Name="Cellular_Number" Type="System.String" DbType="VarChar(50) NOT NULL" CanBeNull="false" />
+      <Column Name="SMS_Number" Type="System.String" DbType="VarChar(50) NOT NULL" CanBeNull="false" />
+      <Column Name="Title" Type="System.String" DbType="VarChar(50) NOT NULL" CanBeNull="false" />
+      <Column Name="SMTP_Server" Type="System.String" DbType="VarChar(50) NOT NULL" CanBeNull="false" />
+      <Column Name="Email_Display_Name" Type="System.String" DbType="VarChar(50) NOT NULL" CanBeNull="false" />
+      <Column Name="Account_Disabled" Type="System.Boolean" DbType="Bit NOT NULL" CanBeNull="false" />
+      <Column Name="Comments" Type="System.String" DbType="VarChar(255) NOT NULL" CanBeNull="false" />
+      <Column Name="intraiQ_Login" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="Last_intraiQ_Login" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="RoleID" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="CommissionGroupID" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="Gender" Type="System.Byte" DbType="TinyInt NOT NULL" CanBeNull="false" />
+      <Column Name="SpecialIdentifier" Type="System.String" DbType="VarChar(25) NOT NULL" CanBeNull="false" />
+      <Column Name="EmailUserName" Type="System.String" DbType="VarChar(50) NOT NULL" CanBeNull="false" />
+      <Column Name="EmailPassword" Type="System.String" DbType="VarChar(255) NOT NULL" CanBeNull="false" />
+      <Column Name="SupervisorID" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="SIN" Type="System.String" DbType="VarChar(15) NOT NULL" CanBeNull="false" />
+      <Column Name="BirthDate" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="StartDate" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="InsuranceComplete" Type="System.Boolean" DbType="Bit NOT NULL" CanBeNull="false" />
+      <Column Name="InsuranceCarrier" Type="System.String" DbType="VarChar(50) NOT NULL" CanBeNull="false" />
+      <Column Name="BenefitIDNumber" Type="System.String" DbType="VarChar(25) NOT NULL" CanBeNull="false" />
+      <Column Name="InsurancePlanNumber" Type="System.String" DbType="VarChar(25) NOT NULL" CanBeNull="false" />
+      <Column Name="Website" Type="System.String" DbType="VarChar(50) NOT NULL" CanBeNull="false" />
+      <Column Name="DefaultLocation" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="DefaultZoneForWho" Type="System.Byte" DbType="TinyInt" CanBeNull="true" />
+      <Column Name="EmailServerID" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="LastLoggedInVersion" Type="System.String" DbType="VarChar(8) NOT NULL" CanBeNull="false" />
+      <Column Name="Home_Number_Ext" Type="System.String" DbType="VarChar(5) NOT NULL" CanBeNull="false" />
+      <Column Name="Work_Number_Ext" Type="System.String" DbType="VarChar(5) NOT NULL" CanBeNull="false" />
+      <Column Name="Cellular_Number_Ext" Type="System.String" DbType="VarChar(5) NOT NULL" CanBeNull="false" />
+      <Column Name="LastPasswordChangeDate" Type="System.DateTime" DbType="DateTime NOT NULL" CanBeNull="false" />
+      <Column Name="Language" Type="System.String" DbType="VarChar(255)" CanBeNull="true" />
+      <Column Name="TimeOffCodeVacation" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="TimeOffCodeSickDay" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="TimeOffCodePersonalDay" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="IsEmailPasswordEncrypted" Type="System.Boolean" DbType="Bit NOT NULL" CanBeNull="false" />
+      <Column Name="RequirePasswordChange" Type="System.Boolean" DbType="Bit NOT NULL" CanBeNull="false" />
+      <Column Name="TerminationDate" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="TerminationNotes" Type="System.String" DbType="VarChar(255) NOT NULL" CanBeNull="false" />
+      <Column Name="ScheduledTerminationDate" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="ScheduledTerminationNotes" Type="System.String" DbType="VarChar(255) NOT NULL" CanBeNull="false" />
+      <Column Name="PassPhrase" Type="System.String" DbType="VarChar(50) NOT NULL" CanBeNull="false" />
+      <Column Name="IsPartTime" Type="System.Boolean" DbType="Bit NOT NULL" CanBeNull="false" />
+      <Column Name="VacationDaysAvailable" Type="System.Decimal" DbType="Decimal(8,4) NOT NULL" CanBeNull="false" />
+      <Column Name="SickDaysAvailable" Type="System.Decimal" DbType="Decimal(8,4) NOT NULL" CanBeNull="false" />
+      <Column Name="PersonalDaysAvailable" Type="System.Decimal" DbType="Decimal(8,4) NOT NULL" CanBeNull="false" />
+      <Column Name="RowID" Type="System.Guid" DbType="UniqueIdentifier" CanBeNull="true" />
+      <Column Name="PasswordIsCaseSensitive" Type="System.Boolean" DbType="Bit NOT NULL" CanBeNull="false" />
+      <Column Name="Username" Type="System.String" DbType="VarChar(51)" CanBeNull="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.commissions_channel_leader_detail" Member="commissions_channel_leader_detail">
+    <Type Name="commissions_channel_leader_detail">
+      <Column Name="commissions_channel_leader_detail_id" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="commissions_channel_leader_id" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="commissions_type_id" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="commissions_participation_id" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="participation_location_count" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="participation_target_count" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="participation_index_value" Type="System.Decimal" DbType="Decimal(18,4) NOT NULL" CanBeNull="false" />
+      <Column Name="performance_target_id" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="target_value" Type="System.Decimal" DbType="Decimal(18,4) NOT NULL" CanBeNull="false" />
+      <Column Name="min_metric_id" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="min_metric_value" Type="System.Decimal" DbType="Decimal(18,4) NOT NULL" CanBeNull="false" />
+      <Column Name="metric_id" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="metric_value" Type="System.Decimal" DbType="Decimal(18,4) NOT NULL" CanBeNull="false" />
+      <Column Name="percent_to_target" Type="System.Decimal" DbType="Decimal(18,4) NOT NULL" CanBeNull="false" />
+      <Column Name="accelerator_value" Type="System.Decimal" DbType="Decimal(18,4) NOT NULL" CanBeNull="false" />
+      <Column Name="performance_total" Type="System.Decimal" DbType="Decimal(18,4) NOT NULL" CanBeNull="false" />
+      <Column Name="payout_id" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="payout_category_id" Type="System.String" DbType="VarChar(100) NOT NULL" CanBeNull="false" />
+      <Column Name="payout_sku" Type="System.String" DbType="VarChar(12) NOT NULL" CanBeNull="false" />
+      <Column Name="payout_amount" Type="System.Decimal" DbType="Decimal(18,4) NOT NULL" CanBeNull="false" />
+      <Column Name="payout_count" Type="System.Decimal" DbType="Decimal(18,4) NOT NULL" CanBeNull="false" />
+      <Column Name="payout_total" Type="System.Decimal" DbType="Decimal(18,4) NOT NULL" CanBeNull="false" />
+      <Column Name="kpi_id" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="kpi_points" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+    </Type>
+  </Table>
+  <Table Name="dbo.performance_targets" Member="performance_targets">
+    <Type Name="performance_targets">
+      <Column Name="performance_target_id" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="performance_target_metric_id" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="target_value" Type="System.Decimal" DbType="Decimal(18,4) NOT NULL" CanBeNull="false" />
+      <Column Name="target_level_id" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="store_id" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="store_name" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="district_id" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="district_name" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="region_id" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="region_name" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="employee_id" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="employee_name" Type="System.String" DbType="VarChar(51)" CanBeNull="true" />
+      <Column Name="channel_id" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="channel_name" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.commissions_target_tiers" Member="commissions_target_tiers">
+    <Type Name="commissions_target_tiers">
+      <Column Name="commissions_target_tiers_id" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="pay_period_id" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="performance_target_level" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="tier_description" Type="System.String" DbType="VarChar(50) NOT NULL" CanBeNull="false" />
+      <Column Name="metric_id" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="start_value" Type="System.Decimal" DbType="Decimal(18,4) NOT NULL" CanBeNull="false" />
+      <Column Name="end_value" Type="System.Decimal" DbType="Decimal(18,4) NOT NULL" CanBeNull="false" />
+    </Type>
+  </Table>
+  <Table Name="dbo.commissions_target_calculations" Member="commissions_target_calculations">
+    <Type Name="commissions_target_calculations">
+      <Column Name="commissions_target_calculations_id" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="pay_period_id" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="group_id" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="left_metric_id" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="left_metric_source" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="right_metric_id" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="right_metric_source" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="operator" Type="System.Char" DbType="Char(1) NOT NULL" CanBeNull="false" />
+      <Column Name="per_pay_period" Type="System.Boolean" DbType="Bit NOT NULL" CanBeNull="false" />
+      <Column Name="result_metric_id" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="result_metric_source" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="round_direction" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="left_metric_bsr_id" Type="System.Int32" DbType="Int" CanBeNull="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.commissions_sales_consultant_detail" Member="commissions_sales_consultant_detail">
+    <Type Name="commissions_sales_consultant_detail">
+      <Column Name="commissions_sales_consultant_detail_id" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="commissions_sales_consultant_id" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="performance_target_id" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="commissions_type_id" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="target_value" Type="System.Decimal" DbType="Decimal(18,4) NOT NULL" CanBeNull="false" />
+      <Column Name="min_metric_id" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="min_metric_value" Type="System.Decimal" DbType="Decimal(18,4) NOT NULL" CanBeNull="false" />
+      <Column Name="metric_id" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="metric_value" Type="System.Decimal" DbType="Decimal(18,4) NOT NULL" CanBeNull="false" />
+      <Column Name="percent_to_target" Type="System.Decimal" DbType="Decimal(18,4) NOT NULL" CanBeNull="false" />
+      <Column Name="accelerator_value" Type="System.Decimal" DbType="Decimal(18,4) NOT NULL" CanBeNull="false" />
+      <Column Name="performance_total" Type="System.Decimal" DbType="Decimal(18,4) NOT NULL" CanBeNull="false" />
+      <Column Name="payout_id" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="payout_category_id" Type="System.String" DbType="VarChar(100) NOT NULL" CanBeNull="false" />
+      <Column Name="payout_sku" Type="System.String" DbType="VarChar(12) NOT NULL" CanBeNull="false" />
+      <Column Name="payout_amount" Type="System.Decimal" DbType="Decimal(18,4) NOT NULL" CanBeNull="false" />
+      <Column Name="payout_count" Type="System.Decimal" DbType="Decimal(18,4) NOT NULL" CanBeNull="false" />
+      <Column Name="payout_total" Type="System.Decimal" DbType="Decimal(18,4) NOT NULL" CanBeNull="false" />
+      <Column Name="kpi_id" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="kpi_points" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="mso_serial_number" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="payout_location_id" Type="System.Int32" DbType="Int" CanBeNull="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.commissions_payouts_sku" Member="commissions_payouts_sku">
+    <Type Name="commissions_payouts_sku">
+      <Column Name="commissions_payouts_sku_id" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="performance_target_level" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="start_date" Type="System.DateTime" DbType="DateTime NOT NULL" CanBeNull="false" />
+      <Column Name="end_date" Type="System.DateTime" DbType="DateTime NOT NULL" CanBeNull="false" />
+      <Column Name="sku" Type="System.String" DbType="VarChar(50) NOT NULL" CanBeNull="false" />
+      <Column Name="description" Type="System.String" DbType="VarChar(255)" CanBeNull="true" />
+      <Column Name="goes_to_GP" Type="System.Boolean" DbType="Bit NOT NULL" CanBeNull="false" />
+      <Column Name="amount" Type="System.Decimal" DbType="Decimal(18,4) NOT NULL" CanBeNull="false" />
+      <Column Name="amount_is_percent_of_item_GP" Type="System.Boolean" DbType="Bit NOT NULL" CanBeNull="false" />
+      <Column Name="ignore_min_checks" Type="System.Boolean" DbType="Bit NOT NULL" CanBeNull="false" />
+      <Column Name="rq4_commission_group_id" Type="System.Int32" DbType="Int" CanBeNull="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.commissions_channel_leader" Member="commissions_channel_leader">
+    <Type Name="commissions_channel_leader">
+      <Column Name="commissions_channel_leader_id" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="pay_period_id" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="employee_id" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="channel_id" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="channel_name" Type="System.String" DbType="VarChar(100) NOT NULL" CanBeNull="false" />
+      <Column Name="base_gross_profit" Type="System.Decimal" DbType="Decimal(18,4) NOT NULL" CanBeNull="false" />
+      <Column Name="commission_gross_profit" Type="System.Decimal" DbType="Decimal(18,4) NOT NULL" CanBeNull="false" />
+      <Column Name="gross_profit_margin_percent" Type="System.Decimal" DbType="Decimal(18,4) NOT NULL" CanBeNull="false" />
+      <Column Name="gross_profit_margin" Type="System.Decimal" DbType="Decimal(18,4) NOT NULL" CanBeNull="false" />
+      <Column Name="participation_total" Type="System.Decimal" DbType="Decimal(18,4) NOT NULL" CanBeNull="false" />
+      <Column Name="commission_total" Type="System.Decimal" DbType="Decimal(18,4) NOT NULL" CanBeNull="false" />
+      <Column Name="manual_adjustment" Type="System.Decimal" DbType="Decimal(18,4) NOT NULL" CanBeNull="false" />
+      <Column Name="coupons" Type="System.Decimal" DbType="Decimal(18,4) NOT NULL" CanBeNull="false" />
+      <Column Name="kpi_total" Type="System.Decimal" DbType="Decimal(18,4) NOT NULL" CanBeNull="false" />
+      <Column Name="last_updated" Type="System.DateTime" DbType="DateTime NOT NULL" CanBeNull="false" />
+    </Type>
+  </Table>
+  <Table Name="dbo.commissions_sales_consultant" Member="commissions_sales_consultant">
+    <Type Name="commissions_sales_consultant">
+      <Column Name="commissions_sales_consultant_id" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="pay_period_id" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="employee_id" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="region_id" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="region_name" Type="System.String" DbType="VarChar(100) NOT NULL" CanBeNull="false" />
+      <Column Name="district_id" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="district_name" Type="System.String" DbType="VarChar(100) NOT NULL" CanBeNull="false" />
+      <Column Name="store_id" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="store_name" Type="System.String" DbType="VarChar(100) NOT NULL" CanBeNull="false" />
+      <Column Name="base_gross_profit" Type="System.Decimal" DbType="Decimal(18,4) NOT NULL" CanBeNull="false" />
+      <Column Name="commission_gross_profit" Type="System.Decimal" DbType="Decimal(18,4) NOT NULL" CanBeNull="false" />
+      <Column Name="gross_profit_margin_percent" Type="System.Decimal" DbType="Decimal(18,4) NOT NULL" CanBeNull="false" />
+      <Column Name="gross_profit_margin" Type="System.Decimal" DbType="Decimal(18,4) NOT NULL" CanBeNull="false" />
+      <Column Name="performance_total" Type="System.Decimal" DbType="Decimal(18,4) NOT NULL" CanBeNull="false" />
+      <Column Name="payout_total" Type="System.Decimal" DbType="Decimal(18,4) NOT NULL" CanBeNull="false" />
+      <Column Name="commission_total" Type="System.Decimal" DbType="Decimal(18,4) NOT NULL" CanBeNull="false" />
+      <Column Name="manual_adjustment" Type="System.Decimal" DbType="Decimal(18,4) NOT NULL" CanBeNull="false" />
+      <Column Name="current_boxes_total" Type="System.Decimal" DbType="Decimal(18,4) NOT NULL" CanBeNull="false" />
+      <Column Name="min_boxes_total" Type="System.Decimal" DbType="Decimal(18,4) NOT NULL" CanBeNull="false" />
+      <Column Name="coupons" Type="System.Decimal" DbType="Decimal(18,4) NOT NULL" CanBeNull="false" />
+      <Column Name="kpi_total" Type="System.Decimal" DbType="Decimal(18,4) NOT NULL" CanBeNull="false" />
+      <Column Name="last_updated" Type="System.DateTime" DbType="DateTime NOT NULL" CanBeNull="false" />
+    </Type>
+  </Table>
+  <Table Name="dbo.commissions_store_leader" Member="commissions_store_leader">
+    <Type Name="commissions_store_leader">
+      <Column Name="commissions_store_leader_id" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="pay_period_id" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="employee_id" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="region_id" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="region_name" Type="System.String" DbType="VarChar(100) NOT NULL" CanBeNull="false" />
+      <Column Name="district_id" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="district_name" Type="System.String" DbType="VarChar(100) NOT NULL" CanBeNull="false" />
+      <Column Name="store_id" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="store_name" Type="System.String" DbType="VarChar(100) NOT NULL" CanBeNull="false" />
+      <Column Name="base_gross_profit" Type="System.Decimal" DbType="Decimal(18,4) NOT NULL" CanBeNull="false" />
+      <Column Name="commission_gross_profit" Type="System.Decimal" DbType="Decimal(18,4) NOT NULL" CanBeNull="false" />
+      <Column Name="gross_profit_margin_percent" Type="System.Decimal" DbType="Decimal(18,4) NOT NULL" CanBeNull="false" />
+      <Column Name="gross_profit_margin" Type="System.Decimal" DbType="Decimal(18,4) NOT NULL" CanBeNull="false" />
+      <Column Name="performance_total" Type="System.Decimal" DbType="Decimal(18,4) NOT NULL" CanBeNull="false" />
+      <Column Name="payout_total" Type="System.Decimal" DbType="Decimal(18,4) NOT NULL" CanBeNull="false" />
+      <Column Name="commission_total" Type="System.Decimal" DbType="Decimal(18,4) NOT NULL" CanBeNull="false" />
+      <Column Name="manual_adjustment" Type="System.Decimal" DbType="Decimal(18,4) NOT NULL" CanBeNull="false" />
+      <Column Name="coupons" Type="System.Decimal" DbType="Decimal(18,4) NOT NULL" CanBeNull="false" />
+      <Column Name="kpi_total" Type="System.Decimal" DbType="Decimal(18,4) NOT NULL" CanBeNull="false" />
+      <Column Name="last_updated" Type="System.DateTime" DbType="DateTime NOT NULL" CanBeNull="false" />
+    </Type>
+  </Table>
+  <Table Name="dbo.commissions_region_leader" Member="commissions_region_leader">
+    <Type Name="commissions_region_leader">
+      <Column Name="commissions_region_leader_id" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="pay_period_id" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="employee_id" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="region_id" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="region_name" Type="System.String" DbType="VarChar(100) NOT NULL" CanBeNull="false" />
+      <Column Name="base_gross_profit" Type="System.Decimal" DbType="Decimal(18,4) NOT NULL" CanBeNull="false" />
+      <Column Name="commission_gross_profit" Type="System.Decimal" DbType="Decimal(18,4) NOT NULL" CanBeNull="false" />
+      <Column Name="gross_profit_margin_percent" Type="System.Decimal" DbType="Decimal(18,4) NOT NULL" CanBeNull="false" />
+      <Column Name="gross_profit_margin" Type="System.Decimal" DbType="Decimal(18,4) NOT NULL" CanBeNull="false" />
+      <Column Name="participation_total" Type="System.Decimal" DbType="Decimal(18,4) NOT NULL" CanBeNull="false" />
+      <Column Name="commission_total" Type="System.Decimal" DbType="Decimal(18,4) NOT NULL" CanBeNull="false" />
+      <Column Name="manual_adjustment" Type="System.Decimal" DbType="Decimal(18,4) NOT NULL" CanBeNull="false" />
+      <Column Name="coupons" Type="System.Decimal" DbType="Decimal(18,4) NOT NULL" CanBeNull="false" />
+      <Column Name="kpi_total" Type="System.Decimal" DbType="Decimal(18,4) NOT NULL" CanBeNull="false" />
+      <Column Name="last_updated" Type="System.DateTime" DbType="DateTime NOT NULL" CanBeNull="false" />
+    </Type>
+  </Table>
+  <Table Name="dbo.commissions_district_leader" Member="commissions_district_leader">
+    <Type Name="commissions_district_leader">
+      <Column Name="commissions_district_leader_id" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="pay_period_id" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="employee_id" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="region_id" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="region_name" Type="System.String" DbType="VarChar(100) NOT NULL" CanBeNull="false" />
+      <Column Name="district_id" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="district_name" Type="System.String" DbType="VarChar(100) NOT NULL" CanBeNull="false" />
+      <Column Name="base_gross_profit" Type="System.Decimal" DbType="Decimal(18,4) NOT NULL" CanBeNull="false" />
+      <Column Name="commission_gross_profit" Type="System.Decimal" DbType="Decimal(18,4) NOT NULL" CanBeNull="false" />
+      <Column Name="gross_profit_margin_percent" Type="System.Decimal" DbType="Decimal(18,4) NOT NULL" CanBeNull="false" />
+      <Column Name="gross_profit_margin" Type="System.Decimal" DbType="Decimal(18,4) NOT NULL" CanBeNull="false" />
+      <Column Name="participation_total" Type="System.Decimal" DbType="Decimal(18,4) NOT NULL" CanBeNull="false" />
+      <Column Name="commission_total" Type="System.Decimal" DbType="Decimal(18,4) NOT NULL" CanBeNull="false" />
+      <Column Name="manual_adjustment" Type="System.Decimal" DbType="Decimal(18,4) NOT NULL" CanBeNull="false" />
+      <Column Name="coupons" Type="System.Decimal" DbType="Decimal(18,4) NOT NULL" CanBeNull="false" />
+      <Column Name="kpi_total" Type="System.Decimal" DbType="Decimal(18,4) NOT NULL" CanBeNull="false" />
+      <Column Name="last_updated" Type="System.DateTime" DbType="DateTime NOT NULL" CanBeNull="false" />
+    </Type>
+  </Table>
+  <Table Name="dbo.commissions_district_leader_detail" Member="commissions_district_leader_detail">
+    <Type Name="commissions_district_leader_detail">
+      <Column Name="commissions_district_leader_detail_id" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="commissions_district_leader_id" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="commissions_type_id" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="commissions_participation_id" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="participation_location_count" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="participation_target_count" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="participation_index_value" Type="System.Decimal" DbType="Decimal(18,4) NOT NULL" CanBeNull="false" />
+      <Column Name="performance_target_id" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="target_value" Type="System.Decimal" DbType="Decimal(18,4) NOT NULL" CanBeNull="false" />
+      <Column Name="min_metric_id" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="min_metric_value" Type="System.Decimal" DbType="Decimal(18,4) NOT NULL" CanBeNull="false" />
+      <Column Name="metric_id" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="metric_value" Type="System.Decimal" DbType="Decimal(18,4) NOT NULL" CanBeNull="false" />
+      <Column Name="percent_to_target" Type="System.Decimal" DbType="Decimal(18,4) NOT NULL" CanBeNull="false" />
+      <Column Name="accelerator_value" Type="System.Decimal" DbType="Decimal(18,4) NOT NULL" CanBeNull="false" />
+      <Column Name="performance_total" Type="System.Decimal" DbType="Decimal(18,4) NOT NULL" CanBeNull="false" />
+      <Column Name="payout_id" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="payout_category_id" Type="System.String" DbType="VarChar(100) NOT NULL" CanBeNull="false" />
+      <Column Name="payout_sku" Type="System.String" DbType="VarChar(12) NOT NULL" CanBeNull="false" />
+      <Column Name="payout_amount" Type="System.Decimal" DbType="Decimal(18,4) NOT NULL" CanBeNull="false" />
+      <Column Name="payout_count" Type="System.Decimal" DbType="Decimal(18,4) NOT NULL" CanBeNull="false" />
+      <Column Name="payout_total" Type="System.Decimal" DbType="Decimal(18,4) NOT NULL" CanBeNull="false" />
+      <Column Name="kpi_id" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="kpi_points" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+    </Type>
+  </Table>
+  <Table Name="dbo.performance_target_metrics" Member="performance_target_metrics">
+    <Type Name="performance_target_metrics">
+      <Column Name="performance_target_metric_id" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="pay_period_id" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="metric_ID" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="roll_up" Type="System.Boolean" DbType="Bit NOT NULL" CanBeNull="false" />
+      <Column Name="used_for_min_check" Type="System.Boolean" DbType="Bit NOT NULL" CanBeNull="false" />
+      <Column Name="min_check_metric_ID" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="for_general_targets" Type="System.Boolean" DbType="Bit NOT NULL" CanBeNull="false" />
+      <Column Name="for_employee_targets" Type="System.Boolean" DbType="Bit NOT NULL" CanBeNull="false" />
+      <Column Name="default_value" Type="System.Decimal" DbType="Decimal(18,4) NOT NULL" CanBeNull="false" />
+    </Type>
+  </Table>
+  <Table Name="dbo.commissions_payouts_category" Member="commissions_payouts_category">
+    <Type Name="commissions_payouts_category">
+      <Column Name="commissions_payouts_category_id" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="performance_target_level" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="pay_period_id" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="category_id" Type="System.String" DbType="VarChar(100) NOT NULL" CanBeNull="false" />
+      <Column Name="description" Type="System.String" DbType="VarChar(255)" CanBeNull="true" />
+      <Column Name="goes_to_GP" Type="System.Boolean" DbType="Bit NOT NULL" CanBeNull="false" />
+      <Column Name="min_performance_target_metric_id" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="metric_id_for_range_values" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="amount" Type="System.Decimal" DbType="Decimal(18,4) NOT NULL" CanBeNull="false" />
+      <Column Name="amount_is_percent_of_item_GP" Type="System.Boolean" DbType="Bit NOT NULL" CanBeNull="false" />
+      <Column Name="auto_create_in_new_payperiod" Type="System.Boolean" DbType="Bit NOT NULL" CanBeNull="false" />
+      <Column Name="start_date" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="end_date" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="include_sub_categories" Type="System.Boolean" DbType="Bit NOT NULL" CanBeNull="false" />
+      <Column Name="rq4_commission_group_id" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="payout_count_format" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="payout_count_label" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.commissions_target_payout_team_bonus" Member="commissions_target_payout_team_bonus">
+    <Type Name="commissions_target_payout_team_bonus">
+      <Column Name="commissions_target_payout_team_bonus_id" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="pay_period_id" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="performance_target_level" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="metric_source" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="metric_id" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="rq4_commission_group_id" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="commissions_type_code" Type="System.String" DbType="VarChar(20) NOT NULL" CanBeNull="false" />
+      <Column Name="percent_of_metric_id" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="ignore_min_check" Type="System.Boolean" DbType="Bit NOT NULL" CanBeNull="false" />
+      <Column Name="commissions_target_tiers_id" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="payout_per_assigned_location" Type="System.Boolean" DbType="Bit NOT NULL" CanBeNull="false" />
+    </Type>
+  </Table>
+  <Table Name="dbo.commissions_pending_payouts" Member="commissions_pending_payouts">
+    <Type Name="commissions_pending_payouts">
+      <Column Name="commissions_pending_payout_id" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="pay_period_id" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="commission_type" Type="System.String" DbType="VarChar(20) NOT NULL" CanBeNull="false" />
+      <Column Name="target_level" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="target_id" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="payout_id" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="payout_code" Type="System.String" DbType="VarChar(100) NOT NULL" CanBeNull="false" />
+      <Column Name="payout_count" Type="System.Decimal" DbType="Decimal(18,4) NOT NULL" CanBeNull="false" />
+      <Column Name="payout_value" Type="System.Decimal" DbType="Decimal(18,4) NOT NULL" CanBeNull="false" />
+      <Column Name="payout_total" Type="System.Decimal" DbType="Decimal(18,4) NOT NULL" CanBeNull="false" />
+    </Type>
+  </Table>
+  <Table Name="dbo.commissions_accelerator_source_types" Member="commissions_accelerator_source_types">
+    <Type Name="commissions_accelerator_source_types">
+      <Column Name="commissions_accelerator_source_types_id" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="type_id" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="code" Type="System.String" DbType="VarChar(10) NOT NULL" CanBeNull="false" />
+      <Column Name="description" Type="System.String" DbType="VarChar(50) NOT NULL" CanBeNull="false" />
+      <Column Name="show_gp_details" Type="System.Boolean" DbType="Bit NOT NULL" CanBeNull="false" />
+      <Column Name="use_monthly_bsr_data" Type="System.Boolean" DbType="Bit NOT NULL" CanBeNull="false" />
+    </Type>
+  </Table>
+  <Table Name="dbo.commissions_accelerator" Member="commissions_accelerator">
+    <Type Name="commissions_accelerator">
+      <Column Name="commissions_accelerator_id" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="pay_period_id" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="performance_tier_id" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="metric_id" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="metric_source" Type="System.Int16" DbType="SmallInt NOT NULL" CanBeNull="false" />
+      <Column Name="start_accelerating_percent" Type="System.Decimal" DbType="Decimal(18,4) NOT NULL" CanBeNull="false" />
+      <Column Name="cap_percent" Type="System.Decimal" DbType="Decimal(18,4) NOT NULL" CanBeNull="false" />
+      <Column Name="rq4_commission_group_id" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="source_value_type_id" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="display_metric_id" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+    </Type>
+  </Table>
+  <Table Name="dbo.rq4_iQmetrix_EmployeeGroups" Member="rq4_iQmetrix_EmployeeGroups">
+    <Type Name="rq4_iQmetrix_EmployeeGroup">
+      <Column Name="id" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="GroupID" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="GroupName" Type="System.String" DbType="VarChar(50) NOT NULL" CanBeNull="false" />
+      <Column Name="RowThumbprint" Type="System.Guid" DbType="UniqueIdentifier" CanBeNull="true" />
+      <Column Name="RowInserted" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="RowUpdated" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.commissions_target_payout" Member="commissions_target_payouts">
+    <Type Name="commissions_target_payout">
+      <Column Name="commissions_target_payout_id" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="pay_period_id" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="performance_target_level" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="metric_source" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="metric_id" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="percent_of_metric_id" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="rq4_commission_group_id" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="commissions_target_tiers_id" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="multiply_metric_val_by_payout_amt" Type="System.Boolean" DbType="Bit NOT NULL" CanBeNull="false" />
+    </Type>
+  </Table>
+  <Function Name="dbo.sp_get_commissions_MSO_data" Method="sp_get_commissions_MSO_data">
+    <Parameter Name="start_date" Type="System.DateTime" DbType="DateTime" />
+    <Parameter Name="end_date" Type="System.DateTime" DbType="DateTime" />
+    <Parameter Name="completed_installs_only" Type="System.Boolean" DbType="Bit" />
+    <ElementType Name="sp_get_commissions_MSO_dataResult">
+      <Column Name="id" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="created_date" Type="System.DateTime" DbType="DateTime2" CanBeNull="true" />
+      <Column Name="file_date" Type="System.DateTime" DbType="DateTime2" CanBeNull="true" />
+      <Column Name="file_name" Type="System.String" DbType="VarChar(255)" CanBeNull="true" />
+      <Column Name="ORDER_NUMBER" Type="System.String" DbType="VarChar(255)" CanBeNull="true" />
+      <Column Name="LOCATION_CODE" Type="System.String" DbType="VarChar(255)" CanBeNull="true" />
+      <Column Name="POS_ORDER_NUMBER" Type="System.String" DbType="VarChar(255)" CanBeNull="true" />
+      <Column Name="PREORDER_CONFIRMATION_NUMBER" Type="System.String" DbType="VarChar(255)" CanBeNull="true" />
+      <Column Name="REP_ID" Type="System.String" DbType="VarChar(255)" CanBeNull="true" />
+      <Column Name="OUTLET_ID" Type="System.String" DbType="VarChar(255)" CanBeNull="true" />
+      <Column Name="LOCATION_TYPE" Type="System.String" DbType="VarChar(255)" CanBeNull="true" />
+      <Column Name="ORDER_DATE" Type="System.String" DbType="VarChar(255)" CanBeNull="true" />
+      <Column Name="CUST_ID" Type="System.String" DbType="VarChar(255)" CanBeNull="true" />
+      <Column Name="ACCOUNT_NUMBER" Type="System.String" DbType="VarChar(255)" CanBeNull="true" />
+      <Column Name="MDN" Type="System.String" DbType="VarChar(255)" CanBeNull="true" />
+      <Column Name="BILLER_ID" Type="System.String" DbType="VarChar(255)" CanBeNull="true" />
+      <Column Name="CUSTOMER_TYPE" Type="System.String" DbType="VarChar(255)" CanBeNull="true" />
+      <Column Name="ORDER_TYPE" Type="System.String" DbType="VarChar(255)" CanBeNull="true" />
+      <Column Name="VZW_TITLE" Type="System.String" DbType="VarChar(255)" CanBeNull="true" />
+      <Column Name="VZW_FIRST_NAME" Type="System.String" DbType="VarChar(255)" CanBeNull="true" />
+      <Column Name="VZW_MIDDLE_INITIAL" Type="System.String" DbType="VarChar(255)" CanBeNull="true" />
+      <Column Name="VZW_LAST_NAME" Type="System.String" DbType="VarChar(255)" CanBeNull="true" />
+      <Column Name="MSO_TITLE" Type="System.String" DbType="VarChar(255)" CanBeNull="true" />
+      <Column Name="MSO_FIRST_NAME" Type="System.String" DbType="VarChar(255)" CanBeNull="true" />
+      <Column Name="MSO_MIDDLE_INITIAL" Type="System.String" DbType="VarChar(255)" CanBeNull="true" />
+      <Column Name="MSO_LAST_NAME" Type="System.String" DbType="VarChar(255)" CanBeNull="true" />
+      <Column Name="MSO_ID" Type="System.String" DbType="VarChar(255)" CanBeNull="true" />
+      <Column Name="MSO_NAME" Type="System.String" DbType="VarChar(255)" CanBeNull="true" />
+      <Column Name="MSO_ORDER_CONF_NUMBER" Type="System.String" DbType="VarChar(255)" CanBeNull="true" />
+      <Column Name="LAST_UPDATE_TS" Type="System.String" DbType="VarChar(255)" CanBeNull="true" />
+      <Column Name="OFFER_ID" Type="System.String" DbType="VarChar(255)" CanBeNull="true" />
+      <Column Name="OFFER_TYPE" Type="System.String" DbType="VarChar(255)" CanBeNull="true" />
+      <Column Name="VERSION" Type="System.String" DbType="VarChar(255)" CanBeNull="true" />
+      <Column Name="DESCRIPTION" Type="System.String" DbType="VarChar(255)" CanBeNull="true" />
+      <Column Name="LAST_UPDATE_TS2" Type="System.String" DbType="VarChar(255)" CanBeNull="true" />
+      <Column Name="SERVICE_TYPE" Type="System.String" DbType="VarChar(255)" CanBeNull="true" />
+      <Column Name="DESCRIPTION2" Type="System.String" DbType="VarChar(255)" CanBeNull="true" />
+      <Column Name="SERVICE_STATUS" Type="System.String" DbType="VarChar(255)" CanBeNull="true" />
+      <Column Name="COMMISSION_STATUS" Type="System.String" DbType="VarChar(255)" CanBeNull="true" />
+      <Column Name="ACTIVITY_DATE" Type="System.String" DbType="VarChar(255)" CanBeNull="true" />
+      <Column Name="ACTIVITY_DETAIL" Type="System.String" DbType="VarChar(255)" CanBeNull="true" />
+      <Column Name="LAST_UPDATE_TS3" Type="System.String" DbType="VarChar(255)" CanBeNull="true" />
+      <Column Name="MSO_RESPONSE_OFFER_ID" Type="System.String" DbType="VarChar(255)" CanBeNull="true" />
+      <Column Name="MSO_RESPONSE_SERVICE_TYPE" Type="System.String" DbType="VarChar(255)" CanBeNull="true" />
+    </ElementType>
+  </Function>
+  <Function Name="dbo.sp_get_commissions_performance_tiers" Method="sp_get_commissions_performance_tiers">
+    <Parameter Name="pay_period_id" Type="System.Int32" DbType="Int" />
+    <ElementType Name="sp_get_commissions_performance_tiersResult">
+      <Column Name="performance_tiers_id" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="pay_period_id" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="performance_target_level" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="tier_code" Type="System.String" DbType="VarChar(10) NOT NULL" CanBeNull="false" />
+      <Column Name="tier_description" Type="System.String" DbType="VarChar(100)" CanBeNull="true" />
+      <Column Name="gross_profit_margin" Type="System.Decimal" DbType="Decimal(18,4) NOT NULL" CanBeNull="false" />
+      <Column Name="commission_cap" Type="System.Decimal" DbType="Decimal(18,4) NOT NULL" CanBeNull="false" />
+      <Column Name="performance_tiers_items_id" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="item_id" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+    </ElementType>
+  </Function>
+  <Function Name="dbo.sp_get_commissions_KPI_data" Method="sp_get_commissions_KPI_data">
+    <Parameter Name="pay_period_id" Type="System.Int32" DbType="Int" />
+    <ElementType Name="sp_get_commissions_KPI_dataResult">
+      <Column Name="commissions_kpi_id" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="pay_period_id" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="performance_target_level" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="metric_id" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="kpi_description" Type="System.String" DbType="VarChar(255)" CanBeNull="true" />
+      <Column Name="auto_create_in_new_payperiod" Type="System.Boolean" DbType="Bit NOT NULL" CanBeNull="false" />
+      <Column Name="commissions_kpi_groups_id" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="item_id" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+    </ElementType>
+  </Function>
+  <Function Name="dbo.sp_get_commissions_invoices" Method="sp_get_commissions_invoices">
+    <Parameter Name="start_date" Type="System.DateTime" DbType="DateTime" />
+    <Parameter Name="end_date" Type="System.DateTime" DbType="DateTime" />
+    <Parameter Name="serial_number" Type="System.String" DbType="VarChar(30)" />
+    <ElementType Name="sp_get_commissions_invoicesResult">
+      <Column Name="DateCreated" Type="System.DateTime" DbType="DateTime NOT NULL" CanBeNull="false" />
+      <Column Name="StoreID2" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="EmployeeID1" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="SaleInvoiceID" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="OriginalSaleInvoiceID" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="InvoiceIDByStore" Type="System.String" DbType="VarChar(14) NOT NULL" CanBeNull="false" />
+      <Column Name="Comments" Type="System.String" DbType="Text" CanBeNull="true" UpdateCheck="Never" />
+      <Column Name="UnitPrice" Type="System.Decimal" DbType="Money NOT NULL" CanBeNull="false" />
+      <Column Name="UnitCost" Type="System.Decimal" DbType="Money NOT NULL" CanBeNull="false" />
+      <Column Name="Quantity" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="SerialNumber" Type="System.String" DbType="VarChar(100) NOT NULL" CanBeNull="false" />
+      <Column Name="CategoryNumber" Type="System.String" DbType="VarChar(100) NOT NULL" CanBeNull="false" />
+      <Column Name="ProductIdentifier" Type="System.String" DbType="VarChar(12) NOT NULL" CanBeNull="false" />
+      <Column Name="GlobalProductID" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="DistrictID" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="RegionID" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="ChannelID" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+    </ElementType>
+  </Function>
+  <Function Name="dbo.sp_get_commissions_performance_targets" Method="sp_get_commissions_performance_targets">
+    <Parameter Name="pay_period_id" Type="System.Int32" DbType="Int" />
+    <ElementType Name="sp_get_commissions_performance_targetsResult">
+      <Column Name="performance_target_id" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="target_value" Type="System.Decimal" DbType="Decimal(18,4) NOT NULL" CanBeNull="false" />
+      <Column Name="target_level_id" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="store_id" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="store_name" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="district_id" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="district_name" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="region_id" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="region_name" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="channel_id" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="channel_name" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="employee_id" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="employee_name" Type="System.String" DbType="VarChar(51)" CanBeNull="true" />
+      <Column Name="performance_target_metric_id" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="pay_period_id" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="metric_ID" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="roll_up" Type="System.Boolean" DbType="Bit NOT NULL" CanBeNull="false" />
+      <Column Name="used_for_min_check" Type="System.Boolean" DbType="Bit NOT NULL" CanBeNull="false" />
+      <Column Name="min_check_metric_ID" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="for_general_targets" Type="System.Boolean" DbType="Bit NOT NULL" CanBeNull="false" />
+      <Column Name="for_employee_targets" Type="System.Boolean" DbType="Bit NOT NULL" CanBeNull="false" />
+    </ElementType>
+  </Function>
+  <Function Name="dbo.sp_get_commissions_manual_adjustments" Method="sp_get_commissions_manual_adjustments">
+    <Parameter Name="start_date" Type="System.DateTime" DbType="DateTime" />
+    <ElementType Name="sp_get_commissions_manual_adjustmentsResult">
+      <Column Name="regionID" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="ChannelID" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="districtID" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="DateCreated" Type="System.DateTime" DbType="DateTime NOT NULL" CanBeNull="false" />
+      <Column Name="LedgerEntryID" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="SaleInvoiceID" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="InvoiceIDByStore" Type="System.String" DbType="VarChar(14)" CanBeNull="true" />
+      <Column Name="GlobalProductID" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="SerialNumber" Type="System.String" DbType="VarChar(100)" CanBeNull="true" />
+      <Column Name="Quantity" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="Priority" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="UnitCommission" Type="System.Decimal" DbType="Money NOT NULL" CanBeNull="false" />
+      <Column Name="StoreID" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="EmployeeID1" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="EmployeeID2" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="Split" Type="System.Boolean" DbType="Bit NOT NULL" CanBeNull="false" />
+      <Column Name="SplitRate1" Type="System.Decimal" DbType="Decimal(5,2) NOT NULL" CanBeNull="false" />
+      <Column Name="SplitRate2" Type="System.Decimal" DbType="Decimal(5,2) NOT NULL" CanBeNull="false" />
+      <Column Name="TransactionType" Type="System.Byte" DbType="TinyInt NOT NULL" CanBeNull="false" />
+      <Column Name="CommissionType" Type="System.Byte" DbType="TinyInt NOT NULL" CanBeNull="false" />
+      <Column Name="CommissionRate" Type="System.Decimal" DbType="Decimal(6,2) NOT NULL" CanBeNull="false" />
+      <Column Name="CommissionSPIF" Type="System.Decimal" DbType="Money NOT NULL" CanBeNull="false" />
+      <Column Name="CommissionFixedCost" Type="System.Decimal" DbType="Money NOT NULL" CanBeNull="false" />
+      <Column Name="CommissionFloatingCost" Type="System.Decimal" DbType="Money NOT NULL" CanBeNull="false" />
+      <Column Name="Comments" Type="System.String" DbType="VarChar(255) NOT NULL" CanBeNull="false" />
+      <Column Name="Suspend" Type="System.Boolean" DbType="Bit NOT NULL" CanBeNull="false" />
+      <Column Name="HasBeenReversed" Type="System.Boolean" DbType="Bit NOT NULL" CanBeNull="false" />
+      <Column Name="InvoiceEditedDate" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="CouponID" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="KeyDate" Type="System.DateTime" DbType="DateTime NOT NULL" CanBeNull="false" />
+      <Column Name="Chargeback" Type="System.Boolean" DbType="Bit NOT NULL" CanBeNull="false" />
+      <Column Name="FullChargeback" Type="System.Boolean" DbType="Bit NOT NULL" CanBeNull="false" />
+      <Column Name="TransactionGUID" Type="System.Guid" DbType="UniqueIdentifier" CanBeNull="true" />
+      <Column Name="MilestoneID" Type="System.Guid" DbType="UniqueIdentifier" CanBeNull="true" />
+      <Column Name="SaleInvoiceAndCouponID" Type="System.Guid" DbType="UniqueIdentifier" CanBeNull="true" />
+    </ElementType>
+  </Function>
+  <Function Name="dbo.sp_get_commissions_coupons" Method="sp_get_commissions_coupons">
+    <ElementType Name="sp_get_commissions_couponsResult">
+      <Column Name="SaleInvoiceAndCouponID" Type="System.Guid" DbType="UniqueIdentifier NOT NULL" CanBeNull="false" />
+      <Column Name="SaleInvoiceID" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="CouponID" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="Amount" Type="System.Decimal" DbType="Money NOT NULL" CanBeNull="false" />
+      <Column Name="IsRefunded" Type="System.Boolean" DbType="Bit NOT NULL" CanBeNull="false" />
+      <Column Name="OriginalSaleInvoiceAndCouponID" Type="System.Guid" DbType="UniqueIdentifier" CanBeNull="true" />
+      <Column Name="LoyaltyProgramID" Type="System.Guid" DbType="UniqueIdentifier" CanBeNull="true" />
+      <Column Name="SerialNumber" Type="System.String" DbType="VarChar(50) NOT NULL" CanBeNull="false" />
+      <Column Name="SaleInvoiceAndProductCouponGroupID" Type="System.Guid" DbType="UniqueIdentifier" CanBeNull="true" />
+    </ElementType>
+  </Function>
+  <Function Name="dbo.sp_get_commissions_custom_data" Method="sp_get_commissions_custom_data">
+    <Parameter Name="pay_period_id" Type="System.Int32" DbType="Int" />
+    <ElementType Name="sp_get_commissions_custom_dataResult">
+      <Column Name="type_group" Type="System.String" DbType="VarChar(30) NOT NULL" CanBeNull="false" />
+      <Column Name="type_code" Type="System.String" DbType="VarChar(30) NOT NULL" CanBeNull="false" />
+      <Column Name="type_description" Type="System.String" DbType="VarChar(100) NOT NULL" CanBeNull="false" />
+      <Column Name="import_file_column_name" Type="System.String" DbType="VarChar(50) NOT NULL" CanBeNull="false" />
+      <Column Name="custom_data_type_id" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="pay_period_id" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="performance_target_level" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="rq_id" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="value" Type="System.Decimal" DbType="Decimal(18,4) NOT NULL" CanBeNull="false" />
+    </ElementType>
+  </Function>
+  <Function Name="dbo.sp_get_commissions_RQ4_employee_stores" Method="sp_get_commissions_RQ4_employee_stores">
+    <ElementType Name="sp_get_commissions_RQ4_employee_storesResult">
+      <Column Name="StoreID" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="EmployeeID" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+    </ElementType>
+  </Function>
+  <Function Name="dbo.sp_get_metrics_data_cached" Method="sp_get_metrics_data_cached">
+    <Parameter Name="start_date" Type="System.DateTime" DbType="DateTime" />
+    <Parameter Name="end_date" Type="System.DateTime" DbType="DateTime" />
+    <Parameter Name="report_level" Type="System.Int32" DbType="Int" />
+    <Parameter Name="region_id" Type="System.Int32" DbType="Int" />
+    <Parameter Name="district_id" Type="System.Int32" DbType="Int" />
+    <Parameter Name="store_id" Type="System.Int32" DbType="Int" />
+    <Parameter Name="employee_id" Type="System.Int32" DbType="Int" />
+    <ElementType Name="sp_get_metrics_data_cachedResult">
+      <Column Name="level_id" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="start_date" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="end_date" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="ID_field" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="description_field" Type="System.String" DbType="VarChar(255)" CanBeNull="true" />
+      <Column Name="channel_id" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="channel_name" Type="System.String" DbType="VarChar(100)" CanBeNull="true" />
+      <Column Name="region_id" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="region_name" Type="System.String" DbType="VarChar(100)" CanBeNull="true" />
+      <Column Name="district_id" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="district_name" Type="System.String" DbType="VarChar(100)" CanBeNull="true" />
+      <Column Name="store_id" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="store_name" Type="System.String" DbType="VarChar(255)" CanBeNull="true" />
+      <Column Name="metric_ID" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="totals" Type="System.Decimal" DbType="Decimal(18,4)" CanBeNull="true" />
+      <Column Name="col_desc" Type="System.String" DbType="VarChar(255)" CanBeNull="true" />
+      <Column Name="column_header" Type="System.String" DbType="VarChar(255)" CanBeNull="true" />
+      <Column Name="column_position" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="formatting" Type="System.String" DbType="VarChar(255)" CanBeNull="true" />
+      <Column Name="info_id" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="info_desc" Type="System.String" DbType="VarChar(255)" CanBeNull="true" />
+    </ElementType>
+  </Function>
+  <Function Name="dbo.sp_get_commissions_stores" Method="sp_get_commissions_stores">
+    <ElementType Name="sp_get_commissions_storesResult">
+      <Column Name="channel_id" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="channel_name" Type="System.String" DbType="VarChar(255)" CanBeNull="true" />
+      <Column Name="channel_leader_id" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="channel_leader_commission_group_id" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="region_id" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="region_name" Type="System.String" DbType="VarChar(255)" CanBeNull="true" />
+      <Column Name="region_manager_id" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="region_leader_commission_group_id" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="district_id" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="district_name" Type="System.String" DbType="VarChar(255)" CanBeNull="true" />
+      <Column Name="district_manager_id" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="district_leader_commission_group_id" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="store_id" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="store_name" Type="System.String" DbType="VarChar(255)" CanBeNull="true" />
+      <Column Name="store_manager_id" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="store_open_date" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="store_close_date" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="store_leader_commission_group_id" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="store_pos_id" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="store_type_id" Type="System.Int32" DbType="Int" CanBeNull="true" />
+    </ElementType>
+  </Function>
+  <Function Name="dbo.sp_get_commissions_employees" Method="sp_get_commissions_employees">
+    <ElementType Name="sp_get_commissions_employeesResult">
+      <Column Name="channel_id" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="channel_name" Type="System.String" DbType="NVarChar(MAX) NOT NULL" CanBeNull="false" />
+      <Column Name="region_id" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="region_name" Type="System.String" DbType="NVarChar(MAX) NOT NULL" CanBeNull="false" />
+      <Column Name="district_id" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="district_name" Type="System.String" DbType="NVarChar(MAX) NOT NULL" CanBeNull="false" />
+      <Column Name="store_id" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="store_name" Type="System.String" DbType="NVarChar(MAX) NOT NULL" CanBeNull="false" />
+      <Column Name="Id_Number" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="First_Name" Type="System.String" DbType="VarChar(25) NOT NULL" CanBeNull="false" />
+      <Column Name="Last_Name" Type="System.String" DbType="VarChar(25) NOT NULL" CanBeNull="false" />
+      <Column Name="Employee_Name" Type="System.String" DbType="VarChar(51) NOT NULL" CanBeNull="false" />
+      <Column Name="SpecialIdentifier" Type="System.String" DbType="VarChar(25) NOT NULL" CanBeNull="false" />
+      <Column Name="DefaultLocation" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="Account_Disabled" Type="System.Boolean" DbType="Bit NOT NULL" CanBeNull="false" />
+      <Column Name="StartDate" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="CommissionGroupID" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="store_leader_id" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="store_leader_name" Type="System.String" DbType="VarChar(51) NOT NULL" CanBeNull="false" />
+      <Column Name="district_leader_id" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="district_leader_name" Type="System.String" DbType="VarChar(51) NOT NULL" CanBeNull="false" />
+      <Column Name="region_leader_id" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="region_leader_name" Type="System.String" DbType="VarChar(51) NOT NULL" CanBeNull="false" />
+      <Column Name="channel_leader_id" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="channel_leader_name" Type="System.String" DbType="VarChar(51) NOT NULL" CanBeNull="false" />
+      <Column Name="last_comp_update" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+    </ElementType>
+  </Function>
+</Database>

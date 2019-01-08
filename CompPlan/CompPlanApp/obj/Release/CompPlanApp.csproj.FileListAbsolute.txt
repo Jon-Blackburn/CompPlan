@@ -1,0 +1,54 @@
+E:\Development\Source\CompPlan\CompPlan\CompPlanApp\bin\Release\CompPlanApp.exe.config
+E:\Development\Source\CompPlan\CompPlan\CompPlanApp\bin\Release\CompPlanApp.exe
+E:\Development\Source\CompPlan\CompPlan\CompPlanApp\bin\Release\CompPlanApp.pdb
+E:\Development\Source\CompPlan\CompPlan\CompPlanApp\bin\Release\CompPlanLib.dll
+E:\Development\Source\CompPlan\CompPlan\CompPlanApp\bin\Release\CompPlanLib.pdb
+E:\Development\Source\CompPlan\CompPlan\CompPlanApp\obj\Release\CompPlanApp.csprojResolveAssemblyReference.cache
+E:\Development\Source\CompPlan\CompPlan\CompPlanApp\obj\Release\CompPlanApp.frmMain.resources
+E:\Development\Source\CompPlan\CompPlan\CompPlanApp\obj\Release\CompPlanApp.frmPleaseWait.resources
+E:\Development\Source\CompPlan\CompPlan\CompPlanApp\obj\Release\CompPlanApp.Properties.Resources.resources
+E:\Development\Source\CompPlan\CompPlan\CompPlanApp\obj\Release\CompPlanApp.csproj.GenerateResource.Cache
+E:\Development\Source\CompPlan\CompPlan\CompPlanApp\obj\Release\CompPlanApp.exe
+E:\Development\Source\CompPlan\CompPlan\CompPlanApp\obj\Release\CompPlanApp.pdb
+E:\Development\source_git\CompPlan\CompPlan\CompPlanApp\bin\Release\CompPlanApp.exe.config
+E:\Development\source_git\CompPlan\CompPlan\CompPlanApp\bin\Release\CompPlanApp.exe
+E:\Development\source_git\CompPlan\CompPlan\CompPlanApp\bin\Release\CompPlanApp.pdb
+E:\Development\source_git\CompPlan\CompPlan\CompPlanApp\bin\Release\CompPlanLib.dll
+E:\Development\source_git\CompPlan\CompPlan\CompPlanApp\bin\Release\CompPlanLib.pdb
+E:\Development\source_git\CompPlan\CompPlan\CompPlanApp\obj\Release\CompPlanApp.csprojResolveAssemblyReference.cache
+E:\Development\source_git\CompPlan\CompPlan\CompPlanApp\obj\Release\CompPlanApp.frmMain.resources
+E:\Development\source_git\CompPlan\CompPlan\CompPlanApp\obj\Release\CompPlanApp.frmPleaseWait.resources
+E:\Development\source_git\CompPlan\CompPlan\CompPlanApp\obj\Release\CompPlanApp.Properties.Resources.resources
+E:\Development\source_git\CompPlan\CompPlan\CompPlanApp\obj\Release\CompPlanApp.csproj.GenerateResource.Cache
+E:\Development\source_git\CompPlan\CompPlan\CompPlanApp\obj\Release\CompPlanApp.exe
+E:\Development\source_git\CompPlan\CompPlan\CompPlanApp\obj\Release\CompPlanApp.pdb
+C:\Development\source\CompPlan\CompPlan\CompPlanApp\bin\Release\CompPlanApp.exe.config
+C:\Development\source\CompPlan\CompPlan\CompPlanApp\bin\Release\CompPlanApp.exe
+C:\Development\source\CompPlan\CompPlan\CompPlanApp\bin\Release\CompPlanApp.pdb
+C:\Development\source\CompPlan\CompPlan\CompPlanApp\bin\Release\CompPlanLib.dll
+C:\Development\source\CompPlan\CompPlan\CompPlanApp\bin\Release\CompPlanLib.pdb
+C:\Development\source\CompPlan\CompPlan\CompPlanApp\bin\Release\CompPlanLib.dll.config
+C:\Development\source\CompPlan\CompPlan\CompPlanApp\obj\Release\CompPlanApp.csprojAssemblyReference.cache
+C:\Development\source\CompPlan\CompPlan\CompPlanApp\obj\Release\CompPlanApp.frmMain.resources
+C:\Development\source\CompPlan\CompPlan\CompPlanApp\obj\Release\CompPlanApp.frmPleaseWait.resources
+C:\Development\source\CompPlan\CompPlan\CompPlanApp\obj\Release\CompPlanApp.Properties.Resources.resources
+C:\Development\source\CompPlan\CompPlan\CompPlanApp\obj\Release\CompPlanApp.csproj.GenerateResource.cache
+C:\Development\source\CompPlan\CompPlan\CompPlanApp\obj\Release\CompPlanApp.csproj.CoreCompileInputs.cache
+C:\Development\source\CompPlan\CompPlan\CompPlanApp\obj\Release\CompPlanApp.csproj.CopyComplete
+C:\Development\source\CompPlan\CompPlan\CompPlanApp\obj\Release\CompPlanApp.exe
+C:\Development\source\CompPlan\CompPlan\CompPlanApp\obj\Release\CompPlanApp.pdb
+C:\Users\jon.blackburn\Desktop\Comp Items\CompPlan\CompPlan\CompPlanApp\bin\Release\CompPlanApp.exe.config
+C:\Users\jon.blackburn\Desktop\Comp Items\CompPlan\CompPlan\CompPlanApp\bin\Release\CompPlanApp.exe
+C:\Users\jon.blackburn\Desktop\Comp Items\CompPlan\CompPlan\CompPlanApp\bin\Release\CompPlanApp.pdb
+C:\Users\jon.blackburn\Desktop\Comp Items\CompPlan\CompPlan\CompPlanApp\bin\Release\CompPlanLib.dll
+C:\Users\jon.blackburn\Desktop\Comp Items\CompPlan\CompPlan\CompPlanApp\bin\Release\CompPlanLib.pdb
+C:\Users\jon.blackburn\Desktop\Comp Items\CompPlan\CompPlan\CompPlanApp\bin\Release\CompPlanLib.dll.config
+C:\Users\jon.blackburn\Desktop\Comp Items\CompPlan\CompPlan\CompPlanApp\obj\Release\CompPlanApp.csprojAssemblyReference.cache
+C:\Users\jon.blackburn\Desktop\Comp Items\CompPlan\CompPlan\CompPlanApp\obj\Release\CompPlanApp.frmMain.resources
+C:\Users\jon.blackburn\Desktop\Comp Items\CompPlan\CompPlan\CompPlanApp\obj\Release\CompPlanApp.frmPleaseWait.resources
+C:\Users\jon.blackburn\Desktop\Comp Items\CompPlan\CompPlan\CompPlanApp\obj\Release\CompPlanApp.Properties.Resources.resources
+C:\Users\jon.blackburn\Desktop\Comp Items\CompPlan\CompPlan\CompPlanApp\obj\Release\CompPlanApp.csproj.GenerateResource.cache
+C:\Users\jon.blackburn\Desktop\Comp Items\CompPlan\CompPlan\CompPlanApp\obj\Release\CompPlanApp.csproj.CoreCompileInputs.cache
+C:\Users\jon.blackburn\Desktop\Comp Items\CompPlan\CompPlan\CompPlanApp\obj\Release\CompPlanApp.csproj.CopyComplete
+C:\Users\jon.blackburn\Desktop\Comp Items\CompPlan\CompPlan\CompPlanApp\obj\Release\CompPlanApp.exe
+C:\Users\jon.blackburn\Desktop\Comp Items\CompPlan\CompPlan\CompPlanApp\obj\Release\CompPlanApp.pdb

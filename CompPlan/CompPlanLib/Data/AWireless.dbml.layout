@@ -1,0 +1,270 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ordesignerObjectsDiagram dslVersion="1.0.0.0" absoluteBounds="0, 0, 21.875, 32.125" name="AWireless">
+  <DataContextMoniker Name="/AWirelessDataContext" />
+  <nestedChildShapes>
+    <classShape Id="eb8a52e8-e588-4461-8eff-d15f7023d933" absoluteBounds="0.75, 2.625, 2, 1.5785953776041666">
+      <DataClassMoniker Name="/AWirelessDataContext/commissions_pay_periods" />
+      <nestedChildShapes>
+        <elementListCompartment Id="b0ed8c3f-025f-4768-bf6a-df50d576cb7f" absoluteBounds="0.76499999999999968, 3.085, 1.9700000000000002, 1.0185953776041665" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="66e93ad4-b287-41e3-8ccb-8f02f9923f3b" absoluteBounds="3.5, 0.5, 2, 1.1939925130208344">
+      <DataClassMoniker Name="/AWirelessDataContext/performance_target_levels" />
+      <nestedChildShapes>
+        <elementListCompartment Id="091de8a0-fe97-4feb-adbe-07d31e00dd80" absoluteBounds="3.5150000000000006, 0.96000000000000085, 1.9700000000000002, 0.63399251302083326" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="fd06c25d-398c-4932-b9b1-388846b341ee" absoluteBounds="12, 10.375, 2, 1.3862939453125">
+      <DataClassMoniker Name="/AWirelessDataContext/commissions_type" />
+      <nestedChildShapes>
+        <elementListCompartment Id="42a9ca77-4f68-486c-9800-311977e8647a" absoluteBounds="12.015, 10.835, 1.9700000000000002, 0.8262939453125" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="027c61c2-7053-428b-83f0-d833d8e29585" absoluteBounds="0.75, 9.5, 2, 1.7708968098958344">
+      <DataClassMoniker Name="/AWirelessDataContext/commissions_accelerator_values" />
+      <nestedChildShapes>
+        <elementListCompartment Id="179ed160-318d-475a-bcc5-ef4eb057c0d5" absoluteBounds="0.76500000000000057, 9.96, 1.9700000000000002, 1.2108968098958333" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="37597a6f-d3e3-4806-bed9-a9cdf6026816" absoluteBounds="6.375, 20.375, 2, 2.1554996744791666">
+      <DataClassMoniker Name="/AWirelessDataContext/commissions_payouts_minimum" />
+      <nestedChildShapes>
+        <elementListCompartment Id="812352f6-3382-4f8e-b1be-b8ca874e4162" absoluteBounds="6.3900000000000006, 20.835, 1.9700000000000002, 1.5954996744791665" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="6676f79c-dadd-46d0-b82a-f3693778e2ff" absoluteBounds="0.75, 28.375, 2, 3.5016097005208309">
+      <DataClassMoniker Name="/AWirelessDataContext/vw_locations_combined" />
+      <nestedChildShapes>
+        <elementListCompartment Id="4f3d5e59-1793-4af4-bc4e-ef44f1f5aa16" absoluteBounds="0.76500000000000057, 28.835, 1.9700000000000002, 2.941609700520833" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="601cbbd8-35a3-436b-9f03-41c40284c035" absoluteBounds="6.375, 23, 2, 2.1554996744791666">
+      <DataClassMoniker Name="/AWirelessDataContext/performance_tiers" />
+      <nestedChildShapes>
+        <elementListCompartment Id="212b00f9-89f2-4097-aa3f-806d01f272af" absoluteBounds="6.3900000000000006, 23.46, 1.9700000000000002, 1.5954996744791665" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="870fdd21-1a12-49e4-bf21-6afaa31724dc" absoluteBounds="6.375, 25.375, 2, 1.3862939453125">
+      <DataClassMoniker Name="/AWirelessDataContext/performance_tiers_items" />
+      <nestedChildShapes>
+        <elementListCompartment Id="aabd6c82-2c7b-4cfb-b2ef-fc700e969881" absoluteBounds="6.3900000000000006, 25.835, 1.9700000000000002, 0.8262939453125" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="2ec60c72-d00f-4484-8a1d-2f8654d40cab" absoluteBounds="6.375, 27, 2, 1.9631982421875">
+      <DataClassMoniker Name="/AWirelessDataContext/commissions_tier_assignment" />
+      <nestedChildShapes>
+        <elementListCompartment Id="0547ef8d-3723-47c0-9860-75d1dc6d8df4" absoluteBounds="6.3900000000000006, 27.46, 1.9700000000000002, 1.4031982421875" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="bee68444-76c7-4f66-96fa-db6019ef4515" absoluteBounds="0.875, 0.5, 2, 1.7708968098958331">
+      <DataClassMoniker Name="/AWirelessDataContext/commissions_configuration" />
+      <nestedChildShapes>
+        <elementListCompartment Id="7f238eb6-4f91-4d92-98e4-4b0f9ca2adef" absoluteBounds="0.89000000000000057, 0.96, 1.9700000000000002, 1.2108968098958333" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="810fd166-6c08-4f97-88b3-e5e7988cfc80" absoluteBounds="0.75, 4.375, 2, 2.1554996744791666">
+      <DataClassMoniker Name="/AWirelessDataContext/commissions_participation" />
+      <nestedChildShapes>
+        <elementListCompartment Id="4f66703a-ea1b-4676-beec-964fbd1e6341" absoluteBounds="0.76499999999999968, 4.8350000000000009, 1.9700000000000002, 1.5954996744791665" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="de1ffa18-94be-4966-9822-be3a40bf77e4" absoluteBounds="12, 12.125, 2, 1.5785953776041666">
+      <DataClassMoniker Name="/AWirelessDataContext/commissions_compplan_log" />
+      <nestedChildShapes>
+        <elementListCompartment Id="e9755809-a9f9-4e3f-8b57-77e3c9374ddd" absoluteBounds="12.015, 12.585, 1.9700000000000002, 1.0185953776041665" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="d06422e2-ed22-40f2-b4ec-1f957f69a0db" absoluteBounds="17.5, 4.25, 2, 5.4246240234374987">
+      <DataClassMoniker Name="/AWirelessDataContext/commissions_region_leader_detail" />
+      <nestedChildShapes>
+        <elementListCompartment Id="f9cd4e18-c2f6-49f3-ba8a-07713367d0d0" absoluteBounds="17.515, 4.71, 1.9700000000000002, 4.8646240234375" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="7d78879c-7d5e-41f0-b25b-3fe23bf5dd33" absoluteBounds="6.375, 0.5, 2, 1.9631982421875">
+      <DataClassMoniker Name="/AWirelessDataContext/commissions_kpi" />
+      <nestedChildShapes>
+        <elementListCompartment Id="55928bc7-42ef-403e-a523-81ef7944ff89" absoluteBounds="6.39, 0.96, 1.9700000000000002, 1.4031982421875" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="ed86cd0b-1af0-46cf-b94b-7fe66ee9b77a" absoluteBounds="6.375, 9, 2, 2.1554996744791666">
+      <DataClassMoniker Name="/AWirelessDataContext/commissions_kpi_points_reward_values" />
+      <nestedChildShapes>
+        <elementListCompartment Id="67459432-c51e-469a-b467-9ab2d6200394" absoluteBounds="6.39, 9.46, 1.9700000000000002, 1.5954996744791665" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="948233d4-6936-4e15-8d32-b9bbdf705a47" absoluteBounds="6.375, 2.875, 2, 1.5785953776041666">
+      <DataClassMoniker Name="/AWirelessDataContext/commissions_kpi_groups" />
+      <nestedChildShapes>
+        <elementListCompartment Id="1eea4abf-32d0-4a02-b070-45a19db6294d" absoluteBounds="6.39, 3.335, 1.9700000000000002, 1.0185953776041665" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="d22c4824-7077-4aaa-b3a3-a88ff625f26d" absoluteBounds="6.375, 5, 2, 1.3862939453125">
+      <DataClassMoniker Name="/AWirelessDataContext/commissions_kpi_items" />
+      <nestedChildShapes>
+        <elementListCompartment Id="1542bf4f-fa3a-4d1a-94c5-ffae075bfbbc" absoluteBounds="6.39, 5.46, 1.9700000000000002, 0.8262939453125" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="74d23da9-1854-4d00-bded-abafc762eac2" absoluteBounds="6.375, 6.875, 2, 1.7708968098958331">
+      <DataClassMoniker Name="/AWirelessDataContext/commissions_kpi_goal_points" />
+      <nestedChildShapes>
+        <elementListCompartment Id="e1903695-e153-4bf9-9bf9-838101700eae" absoluteBounds="6.39, 7.335, 1.9700000000000002, 1.2108968098958333" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="10313507-3819-4ac1-9f55-79fea433ea64" absoluteBounds="3.5, 21.25, 2, 1.3862939453125">
+      <DataClassMoniker Name="/AWirelessDataContext/performance_target_type_mappings" />
+      <nestedChildShapes>
+        <elementListCompartment Id="6c9adb5a-982d-4188-8963-17fe022419a0" absoluteBounds="3.5150000000000006, 21.71, 1.9700000000000002, 0.8262939453125" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="cb909e7b-07f3-452a-8ad2-e9ac5be02dc0" absoluteBounds="12, 5.25, 2, 4.8477197265625">
+      <DataClassMoniker Name="/AWirelessDataContext/commissions_store_leader_detail" />
+      <nestedChildShapes>
+        <elementListCompartment Id="da50d005-f4ee-48a2-8a6e-87675937e8a3" absoluteBounds="12.015, 5.71, 1.9700000000000002, 4.2877197265625" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="50099291-f1a2-4998-b5cf-198a06981be2" absoluteBounds="3.5, 7.875, 2, 1.7708968098958331">
+      <DataClassMoniker Name="/AWirelessDataContext/commissions_target_payout_values" />
+      <nestedChildShapes>
+        <elementListCompartment Id="3e2e300b-bf15-4d88-87f9-927c28faf1a0" absoluteBounds="3.5149999999999997, 8.335, 1.9700000000000002, 1.2108968098958333" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="676b04ee-7072-45a1-bcd2-0567be35497a" absoluteBounds="6.375, 15.5, 2, 1.7708968098958344">
+      <DataClassMoniker Name="/AWirelessDataContext/commissions_payouts_category_values" />
+      <nestedChildShapes>
+        <elementListCompartment Id="828c86e1-842f-49db-9af3-3501fd2864eb" absoluteBounds="6.3900000000000006, 15.96, 1.9700000000000002, 1.2108968098958333" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="77f8a4da-419d-4378-ba41-86dfbc27e2d2" absoluteBounds="3.5, 12.75, 2, 1.7708968098958331">
+      <DataClassMoniker Name="/AWirelessDataContext/commissions_target_payout_team_bonus_values" />
+      <nestedChildShapes>
+        <elementListCompartment Id="b00d1fdd-940f-483d-a157-cce0d8fbdbd3" absoluteBounds="3.5149999999999997, 13.21, 1.9700000000000002, 1.2108968098958333" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="98f115df-8b25-41c0-947c-02aba80a997a" absoluteBounds="0.75, 14, 2, 13.308982747395833">
+      <DataClassMoniker Name="/AWirelessDataContext/vw_iQmetrix_Employees" />
+      <nestedChildShapes>
+        <elementListCompartment Id="a8123d2f-0e28-4eb5-a908-f5ebacc41c17" absoluteBounds="0.76500000000000057, 14.46, 1.9700000000000002, 12.748982747395832" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="5c14f964-4c45-4c53-b19a-5f3436d6d0d1" absoluteBounds="9.375, 14.75, 2, 5.4246240234375">
+      <DataClassMoniker Name="/AWirelessDataContext/commissions_channel_leader_detail" />
+      <nestedChildShapes>
+        <elementListCompartment Id="d7e34ea4-16f8-48a9-aa2a-5d910b7b3ef3" absoluteBounds="9.39, 15.21, 1.9700000000000002, 4.8646240234375" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="e6f03cae-095d-4354-b078-7431b9effb06" absoluteBounds="3.5, 14.625, 2, 3.5016097005208326">
+      <DataClassMoniker Name="/AWirelessDataContext/performance_targets" />
+      <nestedChildShapes>
+        <elementListCompartment Id="86976497-e52c-461f-86b6-aa0ba073f392" absoluteBounds="3.5149999999999997, 15.085, 1.9700000000000002, 2.941609700520833" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="1297e987-2b5b-4fd4-bb6f-ddb3bc31defa" absoluteBounds="3.5, 23, 2, 2.1554996744791666">
+      <DataClassMoniker Name="/AWirelessDataContext/commissions_target_tiers" />
+      <nestedChildShapes>
+        <elementListCompartment Id="be460a8b-c19f-48de-9299-ede64f47a467" absoluteBounds="3.5149999999999997, 23.46, 1.9700000000000002, 1.5954996744791665" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="33d98115-c76f-405c-9566-c362e29a05d9" absoluteBounds="3.5, 4.375, 2, 3.3093082682291666">
+      <DataClassMoniker Name="/AWirelessDataContext/commissions_target_calculations" />
+      <nestedChildShapes>
+        <elementListCompartment Id="02113fcf-1c28-4e67-a060-568229203c03" absoluteBounds="3.5149999999999997, 4.835, 1.9700000000000002, 2.7493082682291665" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="b16e5fc5-d170-4417-a308-cf449a98d570" absoluteBounds="9.375, 5.625, 2, 5.0400211588541657">
+      <DataClassMoniker Name="/AWirelessDataContext/commissions_sales_consultant_detail" />
+      <nestedChildShapes>
+        <elementListCompartment Id="f1a0f532-63e0-4e45-b85f-448e752fa6a2" absoluteBounds="9.39, 6.085, 1.9700000000000002, 4.4800211588541661" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="4d8cd471-7812-4840-a3ee-519f7eebf90f" absoluteBounds="6.375, 17.375, 2, 2.9247054036458331">
+      <DataClassMoniker Name="/AWirelessDataContext/commissions_payouts_sku" />
+      <nestedChildShapes>
+        <elementListCompartment Id="329285e2-9712-4467-8325-1848bfb3dfbd" absoluteBounds="6.39, 17.835, 1.9700000000000002, 2.364705403645833" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="34ca74af-a99e-45e1-a817-5a2f692075fc" absoluteBounds="9.375, 10.875, 2, 3.6939111328124996">
+      <DataClassMoniker Name="/AWirelessDataContext/commissions_channel_leader" />
+      <nestedChildShapes>
+        <elementListCompartment Id="7117d162-4a6b-4061-858f-592c92683733" absoluteBounds="9.39, 11.335, 1.9700000000000002, 3.1339111328125" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="4f9e218c-7b5f-4b5a-8f87-01eca9e4d1f0" absoluteBounds="9.375, 0.5, 2, 5.0400211588541657">
+      <DataClassMoniker Name="/AWirelessDataContext/commissions_sales_consultant" />
+      <nestedChildShapes>
+        <elementListCompartment Id="0902a56b-2e74-43ee-890f-dac7937b9ee3" absoluteBounds="9.39, 0.96, 1.9700000000000002, 4.4800211588541661" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="67ef7f77-e31c-49ce-91fd-a647174180c9" absoluteBounds="12, 0.5, 2, 4.6554182942708326">
+      <DataClassMoniker Name="/AWirelessDataContext/commissions_store_leader" />
+      <nestedChildShapes>
+        <elementListCompartment Id="47e3893d-d099-4ec0-902a-ea80f8f6a6bd" absoluteBounds="12.015, 0.96, 1.9700000000000002, 4.095418294270833" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="48093f24-0139-40d6-b4f5-274f3a8160b7" absoluteBounds="17.5, 0.5, 2, 3.6939111328124996">
+      <DataClassMoniker Name="/AWirelessDataContext/commissions_region_leader" />
+      <nestedChildShapes>
+        <elementListCompartment Id="7ba4c732-4707-4f79-aca8-10b643d77e57" absoluteBounds="17.515, 0.96, 1.9700000000000002, 3.1339111328125" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="95f7a546-b4a5-4e8f-aba4-e5b646990609" absoluteBounds="14.875, 0.5, 2, 4.0785139973958326">
+      <DataClassMoniker Name="/AWirelessDataContext/commissions_district_leader" />
+      <nestedChildShapes>
+        <elementListCompartment Id="911ab117-5a7f-4792-aa59-952bef2c2fb8" absoluteBounds="14.89, 0.96, 1.9700000000000002, 3.518513997395833" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="fff698f2-c2d3-4e1a-9d7e-a984b01d2e4f" absoluteBounds="14.875, 4.75, 2, 5.4246240234375">
+      <DataClassMoniker Name="/AWirelessDataContext/commissions_district_leader_detail" />
+      <nestedChildShapes>
+        <elementListCompartment Id="9e2dfa41-6ed7-4d30-ab33-214f02505dc6" absoluteBounds="14.89, 5.21, 1.9700000000000002, 4.8646240234375" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="fffa753b-1bb7-44e6-b3b9-b092af434f45" absoluteBounds="3.5, 18.375, 2, 2.5401025390625">
+      <DataClassMoniker Name="/AWirelessDataContext/performance_target_metrics" />
+      <nestedChildShapes>
+        <elementListCompartment Id="a6e09744-813a-4d47-bb9e-ca1e6eb3883f" absoluteBounds="3.5149999999999997, 18.835, 1.9700000000000002, 1.9801025390625" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="4de1594a-08d1-4118-9e4c-1703e0dde1e6" absoluteBounds="6.375, 11.25, 2, 4.0785139973958326">
+      <DataClassMoniker Name="/AWirelessDataContext/commissions_payouts_category" />
+      <nestedChildShapes>
+        <elementListCompartment Id="7e5b43c5-e034-4e6c-b5ea-f1808e9753e9" absoluteBounds="6.39, 11.71, 1.9700000000000002, 3.518513997395833" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="0b721af1-372e-4aab-8296-dbc98e69dd7c" absoluteBounds="3.5, 9.75, 2, 2.9247054036458331">
+      <DataClassMoniker Name="/AWirelessDataContext/commissions_target_payout_team_bonus" />
+      <nestedChildShapes>
+        <elementListCompartment Id="a13f4ac7-2d69-48f2-b3b2-5c4e55e761cf" absoluteBounds="3.5149999999999997, 10.21, 1.9700000000000002, 2.364705403645833" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="6b32223f-d088-43eb-a557-1e000a84cd68" absoluteBounds="3.5, 25.5, 2, 2.7324039713541666">
+      <DataClassMoniker Name="/AWirelessDataContext/commissions_pending_payouts" />
+      <nestedChildShapes>
+        <elementListCompartment Id="ac9cad2c-fd94-4cff-9610-2eec495967bc" absoluteBounds="3.5149999999999997, 25.96, 1.9700000000000002, 2.1724039713541665" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="4cf22d2b-6f94-4c4c-9ed0-9c8ed9db963b" absoluteBounds="0.75, 11.625, 2, 1.9631982421875">
+      <DataClassMoniker Name="/AWirelessDataContext/commissions_accelerator_source_types" />
+      <nestedChildShapes>
+        <elementListCompartment Id="9aac2163-cfac-4812-a9fd-38c610c04075" absoluteBounds="0.76500000000000012, 12.085, 1.9700000000000002, 1.4031982421875" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="633daa96-4733-437a-bcdf-4c87d22873d5" absoluteBounds="0.75, 6.75, 2, 2.7324039713541666">
+      <DataClassMoniker Name="/AWirelessDataContext/commissions_accelerator" />
+      <nestedChildShapes>
+        <elementListCompartment Id="a94fed38-05e9-48df-80a7-f89d27d5c814" absoluteBounds="0.76500000000000012, 7.2100000000000009, 1.9700000000000002, 2.1724039713541665" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="28f04061-82a4-4a7d-a3da-a39013ac2baa" absoluteBounds="19.625, 0.5, 2, 1.9631982421875">
+      <DataClassMoniker Name="/AWirelessDataContext/rq4_iQmetrix_EmployeeGroup" />
+      <nestedChildShapes>
+        <elementListCompartment Id="5fb6de00-11ca-44d9-956b-4a3dc09d2895" absoluteBounds="19.64, 0.96, 1.9700000000000002, 1.4031982421875" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="a60f03bf-6d77-4e17-a918-613ee9deaaf5" absoluteBounds="3.5, 1.75, 2, 2.5401025390625">
+      <DataClassMoniker Name="/AWirelessDataContext/commissions_target_payout" />
+      <nestedChildShapes>
+        <elementListCompartment Id="e20f7b16-ec1f-4f00-bd9c-3f0a83e0cdf8" absoluteBounds="3.515, 2.21, 1.9700000000000002, 1.9801025390625" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+  </nestedChildShapes>
+</ordesignerObjectsDiagram>

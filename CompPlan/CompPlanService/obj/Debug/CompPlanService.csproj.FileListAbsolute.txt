@@ -1,0 +1,62 @@
+C:\Development\SVN\CompPlan\CompPlan\CompPlanService\bin\Debug\CompPlanService.exe.config
+C:\Development\SVN\CompPlan\CompPlan\CompPlanService\bin\Debug\CompPlanService.exe
+C:\Development\SVN\CompPlan\CompPlan\CompPlanService\bin\Debug\CompPlanService.pdb
+C:\Development\SVN\CompPlan\CompPlan\CompPlanService\bin\Debug\CompPlanLib.dll
+C:\Development\SVN\CompPlan\CompPlan\CompPlanService\bin\Debug\CompPlanLib.pdb
+C:\Development\SVN\CompPlan\CompPlan\CompPlanService\obj\Debug\CompPlanService.csprojResolveAssemblyReference.cache
+C:\Development\SVN\CompPlan\CompPlan\CompPlanService\obj\Debug\CompPlanService.exe
+C:\Development\SVN\CompPlan\CompPlan\CompPlanService\obj\Debug\CompPlanService.pdb
+C:\Development\backups\CompPlan\CompPlan\CompPlanService\bin\Debug\CompPlanService.exe.config
+C:\Development\backups\CompPlan\CompPlan\CompPlanService\bin\Debug\CompPlanService.exe
+C:\Development\backups\CompPlan\CompPlan\CompPlanService\bin\Debug\CompPlanService.pdb
+C:\Development\backups\CompPlan\CompPlan\CompPlanService\bin\Debug\CompPlanLib.dll
+C:\Development\backups\CompPlan\CompPlan\CompPlanService\bin\Debug\CompPlanLib.pdb
+C:\Development\backups\CompPlan\CompPlan\CompPlanService\obj\Debug\CompPlanService.csprojResolveAssemblyReference.cache
+C:\Development\backups\CompPlan\CompPlan\CompPlanService\obj\Debug\CompPlanService.exe
+C:\Development\backups\CompPlan\CompPlan\CompPlanService\obj\Debug\CompPlanService.pdb
+C:\Development\SVN\CompPlan\CompPlan\CompPlan\CompPlanService\bin\Debug\CompPlanService.exe.config
+C:\Development\SVN\CompPlan\CompPlan\CompPlan\CompPlanService\bin\Debug\CompPlanService.exe
+C:\Development\SVN\CompPlan\CompPlan\CompPlan\CompPlanService\bin\Debug\CompPlanService.pdb
+C:\Development\SVN\CompPlan\CompPlan\CompPlan\CompPlanService\bin\Debug\CompPlanLib.dll
+C:\Development\SVN\CompPlan\CompPlan\CompPlan\CompPlanService\bin\Debug\CompPlanLib.pdb
+C:\Development\SVN\CompPlan\CompPlan\CompPlan\CompPlanService\obj\Debug\CompPlanService.csprojResolveAssemblyReference.cache
+C:\Development\SVN\CompPlan\CompPlan\CompPlan\CompPlanService\obj\Debug\CompPlanService.exe
+C:\Development\SVN\CompPlan\CompPlan\CompPlan\CompPlanService\obj\Debug\CompPlanService.pdb
+E:\Development\Source\CompPlan\CompPlan\CompPlanService\bin\Debug\CompPlanService.exe.config
+E:\Development\Source\CompPlan\CompPlan\CompPlanService\bin\Debug\CompPlanService.exe
+E:\Development\Source\CompPlan\CompPlan\CompPlanService\bin\Debug\CompPlanService.pdb
+E:\Development\Source\CompPlan\CompPlan\CompPlanService\bin\Debug\CompPlanLib.dll
+E:\Development\Source\CompPlan\CompPlan\CompPlanService\bin\Debug\CompPlanLib.pdb
+E:\Development\Source\CompPlan\CompPlan\CompPlanService\obj\Debug\CompPlanService.csprojResolveAssemblyReference.cache
+E:\Development\Source\CompPlan\CompPlan\CompPlanService\obj\Debug\CompPlanService.exe
+E:\Development\Source\CompPlan\CompPlan\CompPlanService\obj\Debug\CompPlanService.pdb
+E:\Development\source_git\CompPlan\CompPlan\CompPlanService\bin\Debug\CompPlanService.exe.config
+E:\Development\source_git\CompPlan\CompPlan\CompPlanService\bin\Debug\CompPlanService.exe
+E:\Development\source_git\CompPlan\CompPlan\CompPlanService\bin\Debug\CompPlanService.pdb
+E:\Development\source_git\CompPlan\CompPlan\CompPlanService\bin\Debug\CompPlanLib.dll
+E:\Development\source_git\CompPlan\CompPlan\CompPlanService\bin\Debug\CompPlanLib.pdb
+E:\Development\source_git\CompPlan\CompPlan\CompPlanService\obj\Debug\CompPlanService.exe
+E:\Development\source_git\CompPlan\CompPlan\CompPlanService\obj\Debug\CompPlanService.pdb
+E:\Development\source_git\CompPlan\CompPlan\CompPlanService\obj\Debug\CompPlanService.csprojResolveAssemblyReference.cache
+C:\Development\source\CompPlan\CompPlan\CompPlanService\bin\Debug\CompPlanService.exe.config
+C:\Development\source\CompPlan\CompPlan\CompPlanService\bin\Debug\CompPlanService.exe
+C:\Development\source\CompPlan\CompPlan\CompPlanService\bin\Debug\CompPlanService.pdb
+C:\Development\source\CompPlan\CompPlan\CompPlanService\bin\Debug\CompPlanLib.dll
+C:\Development\source\CompPlan\CompPlan\CompPlanService\bin\Debug\CompPlanLib.pdb
+C:\Development\source\CompPlan\CompPlan\CompPlanService\bin\Debug\CompPlanLib.dll.config
+C:\Development\source\CompPlan\CompPlan\CompPlanService\obj\Debug\CompPlanService.csprojResolveAssemblyReference.cache
+C:\Development\source\CompPlan\CompPlan\CompPlanService\obj\Debug\CompPlanService.csproj.CoreCompileInputs.cache
+C:\Development\source\CompPlan\CompPlan\CompPlanService\obj\Debug\CompPlanService.csproj.CopyComplete
+C:\Development\source\CompPlan\CompPlan\CompPlanService\obj\Debug\CompPlanService.exe
+C:\Development\source\CompPlan\CompPlan\CompPlanService\obj\Debug\CompPlanService.pdb
+C:\Users\jon.blackburn\Desktop\Comp Items\CompPlan\CompPlan\CompPlanService\bin\Debug\CompPlanService.exe.config
+C:\Users\jon.blackburn\Desktop\Comp Items\CompPlan\CompPlan\CompPlanService\bin\Debug\CompPlanService.exe
+C:\Users\jon.blackburn\Desktop\Comp Items\CompPlan\CompPlan\CompPlanService\bin\Debug\CompPlanService.pdb
+C:\Users\jon.blackburn\Desktop\Comp Items\CompPlan\CompPlan\CompPlanService\bin\Debug\CompPlanLib.dll
+C:\Users\jon.blackburn\Desktop\Comp Items\CompPlan\CompPlan\CompPlanService\bin\Debug\CompPlanLib.pdb
+C:\Users\jon.blackburn\Desktop\Comp Items\CompPlan\CompPlan\CompPlanService\bin\Debug\CompPlanLib.dll.config
+C:\Users\jon.blackburn\Desktop\Comp Items\CompPlan\CompPlan\CompPlanService\obj\Debug\CompPlanService.csprojAssemblyReference.cache
+C:\Users\jon.blackburn\Desktop\Comp Items\CompPlan\CompPlan\CompPlanService\obj\Debug\CompPlanService.csproj.CoreCompileInputs.cache
+C:\Users\jon.blackburn\Desktop\Comp Items\CompPlan\CompPlan\CompPlanService\obj\Debug\CompPlanService.csproj.CopyComplete
+C:\Users\jon.blackburn\Desktop\Comp Items\CompPlan\CompPlan\CompPlanService\obj\Debug\CompPlanService.exe
+C:\Users\jon.blackburn\Desktop\Comp Items\CompPlan\CompPlan\CompPlanService\obj\Debug\CompPlanService.pdb

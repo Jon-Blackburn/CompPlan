@@ -1,0 +1,54 @@
+C:\Development\SVN\CompPlan\CompPlan\CompPlan\CompPlanConsole\bin\Release\CompPlanConsole.exe.config
+C:\Development\SVN\CompPlan\CompPlan\CompPlan\CompPlanConsole\obj\Release\CompPlanConsole.exe
+C:\Development\SVN\CompPlan\CompPlan\CompPlan\CompPlanConsole\obj\Release\CompPlanConsole.pdb
+C:\Development\SVN\CompPlan\CompPlan\CompPlan\CompPlanConsole\bin\Release\CompPlanConsole.exe
+C:\Development\SVN\CompPlan\CompPlan\CompPlan\CompPlanConsole\bin\Release\CompPlanConsole.pdb
+C:\Development\SVN\CompPlan\CompPlan\CompPlan\CompPlanConsole\bin\Release\CompPlanLib.dll
+C:\Development\SVN\CompPlan\CompPlan\CompPlan\CompPlanConsole\bin\Release\CompPlanLib.pdb
+C:\Development\SVN\CompPlan\CompPlan\CompPlan\CompPlanConsole\obj\Release\CompPlanConsole.csprojResolveAssemblyReference.cache
+C:\Development\SVN\CompPlan\CompPlan\CompPlanConsole\bin\Release\CompPlanConsole.exe.config
+C:\Development\SVN\CompPlan\CompPlan\CompPlanConsole\bin\Release\CompPlanConsole.exe
+C:\Development\SVN\CompPlan\CompPlan\CompPlanConsole\bin\Release\CompPlanConsole.pdb
+C:\Development\SVN\CompPlan\CompPlan\CompPlanConsole\bin\Release\CompPlanLib.dll
+C:\Development\SVN\CompPlan\CompPlan\CompPlanConsole\bin\Release\CompPlanLib.pdb
+C:\Development\SVN\CompPlan\CompPlan\CompPlanConsole\obj\Release\CompPlanConsole.csprojResolveAssemblyReference.cache
+C:\Development\SVN\CompPlan\CompPlan\CompPlanConsole\obj\Release\CompPlanConsole.exe
+C:\Development\SVN\CompPlan\CompPlan\CompPlanConsole\obj\Release\CompPlanConsole.pdb
+E:\Development\Source\CompPlan\CompPlan\CompPlanConsole\bin\Release\CompPlanConsole.exe.config
+E:\Development\Source\CompPlan\CompPlan\CompPlanConsole\bin\Release\CompPlanConsole.exe
+E:\Development\Source\CompPlan\CompPlan\CompPlanConsole\bin\Release\CompPlanConsole.pdb
+E:\Development\Source\CompPlan\CompPlan\CompPlanConsole\bin\Release\CompPlanLib.dll
+E:\Development\Source\CompPlan\CompPlan\CompPlanConsole\bin\Release\CompPlanLib.pdb
+E:\Development\Source\CompPlan\CompPlan\CompPlanConsole\obj\Release\CompPlanConsole.csprojResolveAssemblyReference.cache
+E:\Development\Source\CompPlan\CompPlan\CompPlanConsole\obj\Release\CompPlanConsole.exe
+E:\Development\Source\CompPlan\CompPlan\CompPlanConsole\obj\Release\CompPlanConsole.pdb
+E:\Development\source_git\CompPlan\CompPlan\CompPlanConsole\bin\Release\CompPlanConsole.exe.config
+E:\Development\source_git\CompPlan\CompPlan\CompPlanConsole\bin\Release\CompPlanConsole.exe
+E:\Development\source_git\CompPlan\CompPlan\CompPlanConsole\bin\Release\CompPlanConsole.pdb
+E:\Development\source_git\CompPlan\CompPlan\CompPlanConsole\bin\Release\CompPlanLib.dll
+E:\Development\source_git\CompPlan\CompPlan\CompPlanConsole\bin\Release\CompPlanLib.pdb
+E:\Development\source_git\CompPlan\CompPlan\CompPlanConsole\obj\Release\CompPlanConsole.csprojResolveAssemblyReference.cache
+E:\Development\source_git\CompPlan\CompPlan\CompPlanConsole\obj\Release\CompPlanConsole.exe
+E:\Development\source_git\CompPlan\CompPlan\CompPlanConsole\obj\Release\CompPlanConsole.pdb
+C:\Development\source\CompPlan\CompPlan\CompPlanConsole\bin\Release\CompPlanConsole.exe.config
+C:\Development\source\CompPlan\CompPlan\CompPlanConsole\bin\Release\CompPlanConsole.exe
+C:\Development\source\CompPlan\CompPlan\CompPlanConsole\bin\Release\CompPlanConsole.pdb
+C:\Development\source\CompPlan\CompPlan\CompPlanConsole\bin\Release\CompPlanLib.dll
+C:\Development\source\CompPlan\CompPlan\CompPlanConsole\bin\Release\CompPlanLib.pdb
+C:\Development\source\CompPlan\CompPlan\CompPlanConsole\bin\Release\CompPlanLib.dll.config
+C:\Development\source\CompPlan\CompPlan\CompPlanConsole\obj\Release\CompPlanConsole.csprojAssemblyReference.cache
+C:\Development\source\CompPlan\CompPlan\CompPlanConsole\obj\Release\CompPlanConsole.csproj.CoreCompileInputs.cache
+C:\Development\source\CompPlan\CompPlan\CompPlanConsole\obj\Release\CompPlanConsole.csproj.CopyComplete
+C:\Development\source\CompPlan\CompPlan\CompPlanConsole\obj\Release\CompPlanConsole.exe
+C:\Development\source\CompPlan\CompPlan\CompPlanConsole\obj\Release\CompPlanConsole.pdb
+C:\Users\jon.blackburn\Desktop\Comp Items\CompPlan\CompPlan\CompPlanConsole\bin\Release\CompPlanConsole.exe.config
+C:\Users\jon.blackburn\Desktop\Comp Items\CompPlan\CompPlan\CompPlanConsole\bin\Release\CompPlanConsole.exe
+C:\Users\jon.blackburn\Desktop\Comp Items\CompPlan\CompPlan\CompPlanConsole\bin\Release\CompPlanConsole.pdb
+C:\Users\jon.blackburn\Desktop\Comp Items\CompPlan\CompPlan\CompPlanConsole\bin\Release\CompPlanLib.dll
+C:\Users\jon.blackburn\Desktop\Comp Items\CompPlan\CompPlan\CompPlanConsole\bin\Release\CompPlanLib.pdb
+C:\Users\jon.blackburn\Desktop\Comp Items\CompPlan\CompPlan\CompPlanConsole\bin\Release\CompPlanLib.dll.config
+C:\Users\jon.blackburn\Desktop\Comp Items\CompPlan\CompPlan\CompPlanConsole\obj\Release\CompPlanConsole.csprojAssemblyReference.cache
+C:\Users\jon.blackburn\Desktop\Comp Items\CompPlan\CompPlan\CompPlanConsole\obj\Release\CompPlanConsole.csproj.CoreCompileInputs.cache
+C:\Users\jon.blackburn\Desktop\Comp Items\CompPlan\CompPlan\CompPlanConsole\obj\Release\CompPlanConsole.csproj.CopyComplete
+C:\Users\jon.blackburn\Desktop\Comp Items\CompPlan\CompPlan\CompPlanConsole\obj\Release\CompPlanConsole.exe
+C:\Users\jon.blackburn\Desktop\Comp Items\CompPlan\CompPlan\CompPlanConsole\obj\Release\CompPlanConsole.pdb
